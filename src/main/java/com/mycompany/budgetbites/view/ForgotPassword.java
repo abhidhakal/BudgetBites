@@ -65,44 +65,24 @@ public class ForgotPassword extends javax.swing.JFrame {
         emailField1.setForeground(new java.awt.Color(102, 102, 102));
         emailField1.setText("johndoe@gmail.com");
         emailField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        emailField1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                emailField1MouseClicked(evt);
-            }
-        });
 
         oldPwField1.setBackground(new java.awt.Color(227, 235, 219));
         oldPwField1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         oldPwField1.setForeground(new java.awt.Color(102, 102, 102));
         oldPwField1.setText("x27M4/q]x\"e6");
         oldPwField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        oldPwField1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                oldPwField1MouseClicked(evt);
-            }
-        });
 
         newPwField1.setBackground(new java.awt.Color(227, 235, 219));
         newPwField1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         newPwField1.setForeground(new java.awt.Color(102, 102, 102));
         newPwField1.setText("x27M4/q]x\"e6");
         newPwField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        newPwField1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                newPwField1MouseClicked(evt);
-            }
-        });
 
         confirmPwField1.setBackground(new java.awt.Color(227, 235, 219));
         confirmPwField1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         confirmPwField1.setForeground(new java.awt.Color(102, 102, 102));
         confirmPwField1.setText("x27M4/q]x\"e6");
         confirmPwField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        confirmPwField1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                confirmPwField1MouseClicked(evt);
-            }
-        });
 
         clearBtn.setBackground(new java.awt.Color(255, 107, 0));
         clearBtn.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
@@ -110,17 +90,11 @@ public class ForgotPassword extends javax.swing.JFrame {
         clearBtn.setText("CLEAR");
         clearBtn.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         clearBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        clearBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clearBtnActionPerformed(evt);
-            }
-        });
 
         jButton1.setBackground(new java.awt.Color(255, 107, 0));
         jButton1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("CONFIRM");
-        jButton1.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout forgotPwPanelLayout = new javax.swing.GroupLayout(forgotPwPanel);
@@ -190,32 +164,6 @@ public class ForgotPassword extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
-    // Function to clear all texts when CLEAR button is clicked
-    private void clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBtnActionPerformed
-        emailField1.setText("");
-        oldPwField1.setText("");
-        newPwField1.setText("");
-        confirmPwField1.setText("");
-        
-    }//GEN-LAST:event_clearBtnActionPerformed
-
-    // Functions to clear Fields when they is clicked
-    private void emailField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_emailField1MouseClicked
-        emailField1.setText("");
-    }//GEN-LAST:event_emailField1MouseClicked
-
-    private void oldPwField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_oldPwField1MouseClicked
-        oldPwField1.setText("");
-    }//GEN-LAST:event_oldPwField1MouseClicked
-
-    private void newPwField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newPwField1MouseClicked
-        newPwField1.setText("");
-    }//GEN-LAST:event_newPwField1MouseClicked
-
-    private void confirmPwField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_confirmPwField1MouseClicked
-        confirmPwField1.setText("");
-    }//GEN-LAST:event_confirmPwField1MouseClicked
-
     /**
      * @param args the command line arguments
      */
