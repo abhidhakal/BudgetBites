@@ -56,9 +56,16 @@ public class LogIn extends javax.swing.JFrame {
         slogan2.setText("Begin With A Click!");
 
         emailField.setBackground(new java.awt.Color(227, 235, 219));
-        emailField.setForeground(new java.awt.Color(153, 153, 153));
+        emailField.setForeground(new java.awt.Color(102, 102, 102));
+        emailField.setText("johndoe@gmail.com");
+        emailField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                emailFieldMouseClicked(evt);
+            }
+        });
 
         pwField.setBackground(new java.awt.Color(227, 235, 219));
+        pwField.setForeground(new java.awt.Color(102, 102, 102));
         pwField.setText("jPasswordField1");
         pwField.setSize(new java.awt.Dimension(78, 23));
         pwField.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -180,6 +187,10 @@ public class LogIn extends javax.swing.JFrame {
     private void pwFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pwFieldMouseClicked
         pwField.setText("");
     }//GEN-LAST:event_pwFieldMouseClicked
+
+    private void emailFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_emailFieldMouseClicked
+        emailField.setText("");
+    }//GEN-LAST:event_emailFieldMouseClicked
 
     /**
      * @param args the command line arguments
