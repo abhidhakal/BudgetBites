@@ -4,7 +4,7 @@
 
 package com.mycompany.budgetbites;
 
-import com.mycompany.budgetbites.view.SignUp;
+import com.mycompany.budgetbites.view.LogIn;
 
 /**
  *
@@ -13,8 +13,8 @@ import com.mycompany.budgetbites.view.SignUp;
 public class BudgetBites {
 
     public static void main(String[] args) {
-        SignUp singup = new SignUp();
-        singup.setVisible(true);
+        LogIn login = new LogIn();
+        login.setVisible(true);
         
     }
 }
