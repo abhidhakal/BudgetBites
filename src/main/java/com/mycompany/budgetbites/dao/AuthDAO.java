@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.budgetbites.dao;
 import com.mycompany.budgetbites.database.MySqlConnection;
 import com.mycompany.budgetbites.model.SignUpModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-/**
- *
- * @author Rahul
- */
 public class AuthDAO extends MySqlConnection {
     public boolean signUp(SignUpModel user) {
         try {
