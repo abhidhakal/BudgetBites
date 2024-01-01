@@ -97,7 +97,7 @@ public class LogIn extends javax.swing.JFrame {
         label1.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         label1.setText("Don't have an account yet?");
 
-        signupLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        signupLabel.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         signupLabel.setForeground(new java.awt.Color(255, 107, 0));
         signupLabel.setText("Sign Up");
 
