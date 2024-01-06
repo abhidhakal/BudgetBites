@@ -58,43 +58,48 @@ public class SignUp extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(199, 201, 120));
         jPanel3.setAutoscrolls(true);
 
-        accexistsLabel.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        accexistsLabel.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         accexistsLabel.setText("Already have an account with us?");
 
-        slogan1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        slogan1.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
         slogan1.setForeground(new java.awt.Color(90, 0, 0));
         slogan1.setText("Enjoy More, Spend Less:");
 
-        slogan2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        slogan2.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
         slogan2.setForeground(new java.awt.Color(90, 0, 0));
         slogan2.setText("Budget Bites");
 
-        fnLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        fnLabel.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         fnLabel.setText("Firstname");
 
         firstName.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         firstName.setForeground(new java.awt.Color(102, 102, 102));
 
-        lnLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        lnLabel.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         lnLabel.setText("Lastname");
 
         lastName.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         lastName.setForeground(new java.awt.Color(102, 102, 102));
 
-        emailLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        emailLabel.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         emailLabel.setText("Email");
 
         emailField.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         emailField.setForeground(new java.awt.Color(102, 102, 102));
+        emailField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailFieldActionPerformed(evt);
+            }
+        });
 
-        pwLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        pwLabel.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         pwLabel.setText("Password");
 
-        pwReqLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
+        pwReqLabel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         pwReqLabel.setForeground(new java.awt.Color(102, 102, 102));
         pwReqLabel.setText("Between 8-25 characters,must include symbol");
 
-        termsConditions.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        termsConditions.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         termsConditions.setText("I have agreed to Terms and Conditions to creating an account");
 
         createAccBtn.setBackground(new java.awt.Color(255, 107, 0));
@@ -113,13 +118,13 @@ public class SignUp extends javax.swing.JFrame {
             }
         });
 
-        uiLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        uiLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         uiLabel.setForeground(new java.awt.Color(231, 97, 0));
         uiLabel.setText("Join the Community");
 
         image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/imagebook.png"))); // NOI18N
 
-        seePwSignup.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        seePwSignup.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         seePwSignup.setText("See Password");
         seePwSignup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,7 +135,7 @@ public class SignUp extends javax.swing.JFrame {
         pwField.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         pwField.setForeground(new java.awt.Color(102, 102, 102));
 
-        goToLogin.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        goToLogin.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         goToLogin.setForeground(new java.awt.Color(255, 107, 0));
         goToLogin.setText("Log In");
         goToLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -147,55 +152,60 @@ public class SignUp extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(termsConditions, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(accexistsLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(goToLogin)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addComponent(accexistsLabel)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(goToLogin))
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(slogan1)
-                                    .addComponent(slogan2))
-                                .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(uiLabel)
+                                    .addComponent(emailLabel)
+                                    .addComponent(seePwSignup)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(55, 55, 55)
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(slogan2)
+                                            .addComponent(slogan1)))
                                     .addComponent(pwLabel)
-                                    .addGap(86, 86, 86)
-                                    .addComponent(pwReqLabel)
-                                    .addGap(50, 50, 50)))
-                            .addComponent(uiLabel)
-                            .addComponent(emailLabel)
-                            .addComponent(createAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(emailField, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(fnLabel))
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addGap(14, 14, 14)
-                                            .addComponent(lnLabel))
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addComponent(seePwSignup)
-                            .addComponent(pwField, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 30, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(image, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                                    .addComponent(createAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 204, Short.MAX_VALUE))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(pwField, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(emailField, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(fnLabel)
+                                                .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGap(50, 50, 50)
+                                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(lnLabel)
+                                                .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(pwReqLabel))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(termsConditions, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(image)
+                        .addGap(42, 42, 42))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(accexistsLabel)
+                    .addComponent(goToLogin))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(accexistsLabel)
-                            .addComponent(goToLogin))
+                        .addGap(38, 38, 38)
+                        .addComponent(image, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(144, 144, 144))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addComponent(slogan1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -207,43 +217,40 @@ public class SignUp extends javax.swing.JFrame {
                             .addComponent(fnLabel)
                             .addComponent(lnLabel))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(emailLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(pwLabel)
                             .addComponent(pwReqLabel))
-                        .addGap(5, 5, 5)
-                        .addComponent(pwField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pwField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(seePwSignup)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
                         .addComponent(termsConditions)
                         .addGap(18, 18, 18)
-                        .addComponent(createAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(image, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(198, 198, 198))
+                        .addComponent(createAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(132, 132, 132))))
         );
 
         jPanel1.add(jPanel3);
-        jPanel3.setBounds(0, 0, 800, 480);
+        jPanel3.setBounds(0, 0, 980, 610);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 971, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 479, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)
         );
 
         pack();
@@ -286,6 +293,10 @@ public class SignUp extends javax.swing.JFrame {
             goin.setVisible(true);
             this.dispose();
     }//GEN-LAST:event_goToLoginMouseClicked
+
+    private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailFieldActionPerformed
 
     /**
      * @param args the command line arguments
