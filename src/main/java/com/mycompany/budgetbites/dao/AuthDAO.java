@@ -1,8 +1,11 @@
 package com.mycompany.budgetbites.dao;
 import com.mycompany.budgetbites.database.MySqlConnection;
+import com.mycompany.budgetbites.model.LoginModel;
 import com.mycompany.budgetbites.model.SignUpModel;
+import com.mycompany.budgetbites.model.UserData;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class AuthDAO extends MySqlConnection {
     public boolean signUp(SignUpModel user) {
@@ -30,5 +33,32 @@ public class AuthDAO extends MySqlConnection {
             System.out.println(e);
             return false;
         }
+    }
+    public UserData login(LoginModel login){
+        try{
+            PreparedStatement ps = null;
+            Connection conn = openConnection();
+            String sql = "SELECT * FROM users WHERE email = ? and password = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1,login.getEmail());
+            ps.setString(2, login.getPassword());
+            
+            ResultSet result = ps.executeQuery();
+            if(result != null && result.next() != false){
+                // get data here
+                String email = result.getString("email");
+                String password = result.getString("password");
+                
+                UserData user = new UserData(
+                        email, password
+                );
+                return user;
+            }else{
+                return null;
+            }
+        }catch(Exception exception){
+           return null;
+        }
+        
     }
 }
