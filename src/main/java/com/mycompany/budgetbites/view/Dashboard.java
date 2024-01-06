@@ -169,7 +169,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGap(0, 20, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 6, 1230, -1));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 6, 1220, -1));
 
         searchBar.setBackground(new java.awt.Color(255, 211, 147));
         searchBar.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
