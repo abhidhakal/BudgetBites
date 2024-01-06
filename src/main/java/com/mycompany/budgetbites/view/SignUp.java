@@ -31,24 +31,24 @@ public class SignUp extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        accexistsLabel = new javax.swing.JLabel();
+        slogan1 = new javax.swing.JLabel();
+        slogan2 = new javax.swing.JLabel();
+        fnLabel = new javax.swing.JLabel();
         firstName = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        lnLabel = new javax.swing.JLabel();
         lastName = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        emailLabel = new javax.swing.JLabel();
         emailField = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        createButton = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
+        pwLabel = new javax.swing.JLabel();
+        pwReqLabel = new javax.swing.JLabel();
+        termsConditions = new javax.swing.JCheckBox();
+        createAccBtn = new javax.swing.JButton();
+        uiLabel = new javax.swing.JLabel();
         image = new javax.swing.JLabel();
         seePwSignup = new javax.swing.JCheckBox();
         pwField = new javax.swing.JPasswordField();
+        goToLogin = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -58,95 +58,64 @@ public class SignUp extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(199, 201, 120));
         jPanel3.setAutoscrolls(true);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
-        jLabel2.setText("Already have an account with us?");
+        accexistsLabel.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        accexistsLabel.setText("Already have an account with us?");
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(90, 0, 0));
-        jLabel3.setText("Enjoy More, Spend Less:");
+        slogan1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        slogan1.setForeground(new java.awt.Color(90, 0, 0));
+        slogan1.setText("Enjoy More, Spend Less:");
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(90, 0, 0));
-        jLabel1.setText("Budget Bites");
+        slogan2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        slogan2.setForeground(new java.awt.Color(90, 0, 0));
+        slogan2.setText("Budget Bites");
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        jLabel4.setText("Firstname");
+        fnLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        fnLabel.setText("Firstname");
 
         firstName.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         firstName.setForeground(new java.awt.Color(102, 102, 102));
-        firstName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                firstNameActionPerformed(evt);
-            }
-        });
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        jLabel5.setText("Lastname");
+        lnLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        lnLabel.setText("Lastname");
 
         lastName.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         lastName.setForeground(new java.awt.Color(102, 102, 102));
-        lastName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lastNameActionPerformed(evt);
-            }
-        });
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        jLabel6.setText("Email");
+        emailLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        emailLabel.setText("Email");
 
         emailField.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         emailField.setForeground(new java.awt.Color(102, 102, 102));
-        emailField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailFieldActionPerformed(evt);
-            }
-        });
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        jLabel7.setText("Password");
+        pwLabel.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        pwLabel.setText("Password");
 
-        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel8.setText("Between 8-25 characters,must include symbol");
+        pwReqLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 10)); // NOI18N
+        pwReqLabel.setForeground(new java.awt.Color(102, 102, 102));
+        pwReqLabel.setText("Between 8-25 characters,must include symbol");
 
-        jCheckBox1.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jCheckBox1.setText("I have agreed to Terms and Conditions to creating an account");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
+        termsConditions.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        termsConditions.setText("I have agreed to Terms and Conditions to creating an account");
 
-        createButton.setBackground(new java.awt.Color(255, 107, 0));
-        createButton.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        createButton.setForeground(new java.awt.Color(255, 255, 255));
-        createButton.setText("Create account");
-        createButton.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        createButton.addMouseListener(new java.awt.event.MouseAdapter() {
+        createAccBtn.setBackground(new java.awt.Color(255, 107, 0));
+        createAccBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        createAccBtn.setForeground(new java.awt.Color(255, 255, 255));
+        createAccBtn.setText("Create account");
+        createAccBtn.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        createAccBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                createButtonMouseClicked(evt);
+                createAccBtnMouseClicked(evt);
             }
         });
-        createButton.addActionListener(new java.awt.event.ActionListener() {
+        createAccBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createButtonActionPerformed(evt);
+                createAccBtnActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(199, 201, 120));
-        jButton2.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(231, 97, 0));
-        jButton2.setText("Log in");
-        jButton2.setBorder(null);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(231, 97, 0));
-        jLabel9.setText("Join the Community");
+        uiLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        uiLabel.setForeground(new java.awt.Color(231, 97, 0));
+        uiLabel.setText("Join the Community");
 
         image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/imagebook.png"))); // NOI18N
 
@@ -160,7 +129,16 @@ public class SignUp extends javax.swing.JFrame {
 
         pwField.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         pwField.setForeground(new java.awt.Color(102, 102, 102));
-        pwField.setText("x27M4/q]x\"e6");
+
+        goToLogin.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        goToLogin.setForeground(new java.awt.Color(255, 107, 0));
+        goToLogin.setText("Log In");
+        goToLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        goToLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                goToLoginMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -169,36 +147,36 @@ public class SignUp extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(termsConditions, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGap(14, 14, 14)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton2))
+                                .addComponent(accexistsLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(goToLogin))
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel1))
+                                    .addComponent(slogan1)
+                                    .addComponent(slogan2))
                                 .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addComponent(jLabel7)
+                                    .addComponent(pwLabel)
                                     .addGap(86, 86, 86)
-                                    .addComponent(jLabel8)
+                                    .addComponent(pwReqLabel)
                                     .addGap(50, 50, 50)))
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel6)
-                            .addComponent(createButton, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(uiLabel)
+                            .addComponent(emailLabel)
+                            .addComponent(createAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(emailField, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel4))
+                                        .addComponent(fnLabel))
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel3Layout.createSequentialGroup()
                                             .addGap(14, 14, 14)
-                                            .addComponent(jLabel5))
+                                            .addComponent(lnLabel))
                                         .addGroup(jPanel3Layout.createSequentialGroup()
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                             .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))))
@@ -212,42 +190,42 @@ public class SignUp extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(jButton2))
+                            .addComponent(accexistsLabel)
+                            .addComponent(goToLogin))
                         .addGap(26, 26, 26)
-                        .addComponent(jLabel3)
+                        .addComponent(slogan1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1)
+                        .addComponent(slogan2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel9)
+                        .addComponent(uiLabel)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
+                            .addComponent(fnLabel)
+                            .addComponent(lnLabel))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6)
+                        .addComponent(emailLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8))
+                            .addComponent(pwLabel)
+                            .addComponent(pwReqLabel))
                         .addGap(5, 5, 5)
                         .addComponent(pwField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(seePwSignup)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jCheckBox1)
+                        .addComponent(termsConditions)
                         .addGap(18, 18, 18)
-                        .addComponent(createButton, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(createAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(image, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(198, 198, 198))
         );
@@ -271,15 +249,11 @@ public class SignUp extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void createAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createAccBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_createAccBtnActionPerformed
 
-    private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_createButtonActionPerformed
-
-    private void createButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_createButtonMouseClicked
+    private void createAccBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_createAccBtnMouseClicked
         // TODO add your handling code here:
         AuthDAO daoAuth = new AuthDAO();
         String firstname = firstName.getText();
@@ -296,23 +270,7 @@ public class SignUp extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Register Failure");
             System.out.println("Insert Failure");
         }
-    }//GEN-LAST:event_createButtonMouseClicked
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-
-    private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_emailFieldActionPerformed
-
-    private void lastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lastNameActionPerformed
-
-    private void firstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_firstNameActionPerformed
+    }//GEN-LAST:event_createAccBtnMouseClicked
 
     private void seePwSignupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seePwSignupActionPerformed
         if(seePwSignup.isSelected()){
@@ -322,6 +280,12 @@ public class SignUp extends javax.swing.JFrame {
             pwField.setEchoChar('*');
         }
     }//GEN-LAST:event_seePwSignupActionPerformed
+
+    private void goToLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToLoginMouseClicked
+        LogIn goin = new LogIn();
+            goin.setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_goToLoginMouseClicked
 
     /**
      * @param args the command line arguments
@@ -360,25 +324,25 @@ public class SignUp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton createButton;
+    private javax.swing.JLabel accexistsLabel;
+    private javax.swing.JButton createAccBtn;
     private javax.swing.JTextField emailField;
+    private javax.swing.JLabel emailLabel;
     private javax.swing.JTextField firstName;
+    private javax.swing.JLabel fnLabel;
+    private javax.swing.JLabel goToLogin;
     private javax.swing.JLabel image;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField lastName;
+    private javax.swing.JLabel lnLabel;
     private javax.swing.JPasswordField pwField;
+    private javax.swing.JLabel pwLabel;
+    private javax.swing.JLabel pwReqLabel;
     private javax.swing.JCheckBox seePwSignup;
+    private javax.swing.JLabel slogan1;
+    private javax.swing.JLabel slogan2;
+    private javax.swing.JCheckBox termsConditions;
+    private javax.swing.JLabel uiLabel;
     // End of variables declaration//GEN-END:variables
 }
