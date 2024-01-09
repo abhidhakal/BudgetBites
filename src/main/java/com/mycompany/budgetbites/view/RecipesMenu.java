@@ -38,7 +38,6 @@ public class RecipesMenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         MenuPanel.setBackground(new java.awt.Color(255, 211, 147));
-        MenuPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         dashboardSmall.setBackground(new java.awt.Color(46, 34, 34));
 
@@ -62,8 +61,6 @@ public class RecipesMenu extends javax.swing.JFrame {
                 .addComponent(appNameLabel)
                 .addContainerGap(31, Short.MAX_VALUE))
         );
-
-        MenuPanel.add(dashboardSmall, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1310, 90));
 
         searchPanel.setBackground(new java.awt.Color(46, 34, 34));
         searchPanel.setForeground(new java.awt.Color(46, 34, 34));
@@ -93,17 +90,48 @@ public class RecipesMenu extends javax.swing.JFrame {
                 .addGap(19, 19, 19))
         );
 
-        MenuPanel.add(searchPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 10, 100, 90));
-
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setText("QUICK & EASY RECIPES");
-        MenuPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(595, 167, 330, 40));
 
         lineUI1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/longerline.png"))); // NOI18N
-        MenuPanel.add(lineUI1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 1310, -1));
 
         lineUI2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/longerline.png"))); // NOI18N
-        MenuPanel.add(lineUI2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 1310, 50));
+
+        javax.swing.GroupLayout MenuPanelLayout = new javax.swing.GroupLayout(MenuPanel);
+        MenuPanel.setLayout(MenuPanelLayout);
+        MenuPanelLayout.setHorizontalGroup(
+            MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuPanelLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(dashboardSmall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(searchPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(MenuPanelLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuPanelLayout.createSequentialGroup()
+                        .addGap(535, 535, 535)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lineUI1, javax.swing.GroupLayout.PREFERRED_SIZE, 1310, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(MenuPanelLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(lineUI2, javax.swing.GroupLayout.PREFERRED_SIZE, 1310, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        MenuPanelLayout.setVerticalGroup(
+            MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MenuPanelLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(dashboardSmall, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(60, 60, 60)
+                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuPanelLayout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lineUI1))
+                .addComponent(lineUI2))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
