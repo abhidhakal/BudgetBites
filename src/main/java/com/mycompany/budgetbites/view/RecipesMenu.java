@@ -70,6 +70,11 @@ public class RecipesMenu extends javax.swing.JFrame {
         searchPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         searchBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/search.png"))); // NOI18N
+        searchBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                searchBtnMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout searchPanelLayout = new javax.swing.GroupLayout(searchPanel);
         searchPanel.setLayout(searchPanelLayout);
@@ -113,6 +118,12 @@ public class RecipesMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void searchBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchBtnMouseClicked
+        SearchWindow go = new SearchWindow();
+            go.setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_searchBtnMouseClicked
 
     /**
      * @param args the command line arguments
