@@ -71,6 +71,7 @@ public class LogIn extends javax.swing.JFrame {
         forgotPwLabel.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         forgotPwLabel.setForeground(new java.awt.Color(22, 17, 243));
         forgotPwLabel.setText("Forgot Password?");
+        forgotPwLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         forgotPwLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 forgotPwLabelMouseClicked(evt);
@@ -83,6 +84,7 @@ public class LogIn extends javax.swing.JFrame {
         signupLabel.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         signupLabel.setForeground(new java.awt.Color(255, 107, 0));
         signupLabel.setText("Sign Up");
+        signupLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         signupLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 signupLabelMouseClicked(evt);
@@ -91,6 +93,7 @@ public class LogIn extends javax.swing.JFrame {
 
         pwCheckLogin.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         pwCheckLogin.setText("See Password");
+        pwCheckLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pwCheckLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pwCheckLoginActionPerformed(evt);
