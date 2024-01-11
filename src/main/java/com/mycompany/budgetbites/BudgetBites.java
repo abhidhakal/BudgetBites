@@ -13,8 +13,7 @@ import com.mycompany.budgetbites.view.LogIn;
 public class BudgetBites {
 
     public static void main(String[] args) {
-        LogIn login = new LogIn();
-        login.setVisible(true);
-        
+        LogIn ls = new LogIn();
+        ls.setVisible(true);
     }
 }
