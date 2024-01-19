@@ -129,7 +129,7 @@ public class SearchWindow extends javax.swing.JFrame {
                     .addComponent(searchField1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(searchBarIcon)
-                .addContainerGap(369, Short.MAX_VALUE))
+                .addContainerGap(599, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
