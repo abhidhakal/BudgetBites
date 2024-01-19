@@ -40,6 +40,7 @@ public class SearchWindow extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         searchMenuNepal.setBackground(new java.awt.Color(255, 211, 147));
+        searchMenuNepal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         dashboardPanel.setBackground(new java.awt.Color(46, 34, 34));
 
@@ -74,9 +75,9 @@ public class SearchWindow extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(27, 27, 27)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 616, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 410, Short.MAX_VALUE)
                 .addComponent(profileIcon)
-                .addGap(25, 25, 25))
+                .addGap(22, 22, 22))
         );
         dashboardPanelLayout.setVerticalGroup(
             dashboardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -91,52 +92,25 @@ public class SearchWindow extends javax.swing.JFrame {
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
+        searchMenuNepal.add(dashboardPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
+
         searchBarIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/line.png"))); // NOI18N
+        searchMenuNepal.add(searchBarIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 431, -1, -1));
 
         searchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/search.png"))); // NOI18N
+        searchMenuNepal.add(searchIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, -1, -1));
 
         searchField1.setBackground(new java.awt.Color(255, 211, 147));
         searchField1.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         searchField1.setBorder(null);
         searchField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-
-        javax.swing.GroupLayout searchMenuNepalLayout = new javax.swing.GroupLayout(searchMenuNepal);
-        searchMenuNepal.setLayout(searchMenuNepalLayout);
-        searchMenuNepalLayout.setHorizontalGroup(
-            searchMenuNepalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(searchMenuNepalLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(dashboardPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, searchMenuNepalLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(searchMenuNepalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(searchMenuNepalLayout.createSequentialGroup()
-                        .addComponent(searchIcon)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(searchField1))
-                    .addComponent(searchBarIcon))
-                .addGap(339, 339, 339))
-        );
-        searchMenuNepalLayout.setVerticalGroup(
-            searchMenuNepalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(searchMenuNepalLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(dashboardPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(275, 275, 275)
-                .addGroup(searchMenuNepalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(searchIcon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(searchField1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(searchBarIcon)
-                .addContainerGap(599, Short.MAX_VALUE))
-        );
+        searchMenuNepal.add(searchField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, 644, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(searchMenuNepal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(searchMenuNepal, javax.swing.GroupLayout.DEFAULT_SIZE, 1240, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
