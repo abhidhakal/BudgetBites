@@ -82,12 +82,13 @@ public class SearchWindow extends javax.swing.JFrame {
             dashboardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dashboardPanelLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addGroup(dashboardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(appNameLabel)
-                    .addComponent(jLabel1)
+                .addGroup(dashboardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(profileIcon)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
+                    .addGroup(dashboardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(appNameLabel)
+                        .addComponent(jLabel1)
+                        .addComponent(jLabel2)
+                        .addComponent(jLabel3)))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
