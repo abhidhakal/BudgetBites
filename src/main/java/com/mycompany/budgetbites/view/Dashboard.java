@@ -214,6 +214,8 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGap(110, 110, 110))
         );
 
+        jPanel3.getAccessibleContext().setAccessibleName("");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
