@@ -28,10 +28,10 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        goRecipeBtn = new javax.swing.JButton();
+        goUploadRecipeBtn = new javax.swing.JButton();
+        goSavedRecipeBtn = new javax.swing.JButton();
+        goProfile = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -48,45 +48,35 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(81, 74, 74));
 
-        jButton1.setBackground(new java.awt.Color(217, 217, 217));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton1.setText("Recipes & Menus");
-        jButton1.setBorderPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        goRecipeBtn.setBackground(new java.awt.Color(217, 217, 217));
+        goRecipeBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        goRecipeBtn.setText("Recipes & Menus");
+        goRecipeBtn.setBorderPainted(false);
+        goRecipeBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                goRecipeBtnActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(217, 217, 217));
-        jButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton2.setText("Uploaded recipes ");
-        jButton2.setBorderPainted(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        goUploadRecipeBtn.setBackground(new java.awt.Color(217, 217, 217));
+        goUploadRecipeBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        goUploadRecipeBtn.setText("Uploaded recipes ");
+        goUploadRecipeBtn.setBorderPainted(false);
+
+        goSavedRecipeBtn.setBackground(new java.awt.Color(217, 217, 217));
+        goSavedRecipeBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        goSavedRecipeBtn.setText("My Saved Recipes ");
+        goSavedRecipeBtn.setBorderPainted(false);
+        goSavedRecipeBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                goSavedRecipeBtnActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(217, 217, 217));
-        jButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton3.setText("My Saved Recipes ");
-        jButton3.setBorderPainted(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setBackground(new java.awt.Color(217, 217, 217));
-        jButton4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton4.setText("Profile");
-        jButton4.setBorderPainted(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
+        goProfile.setBackground(new java.awt.Color(217, 217, 217));
+        goProfile.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        goProfile.setText("Profile");
+        goProfile.setBorderPainted(false);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/logosmall.png"))); // NOI18N
 
@@ -97,10 +87,10 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(goRecipeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(goUploadRecipeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(goSavedRecipeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(goProfile, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
@@ -113,13 +103,13 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(goRecipeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(goUploadRecipeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(goSavedRecipeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(goProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(210, Short.MAX_VALUE))
         );
 
@@ -238,22 +228,6 @@ public class Dashboard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     private void searchBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_searchBarActionPerformed
@@ -262,6 +236,18 @@ public class Dashboard extends javax.swing.JFrame {
         searchBar.setText("");
     }//GEN-LAST:event_searchBarMouseClicked
 
+    private void goRecipeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goRecipeBtnActionPerformed
+        RecipesMenu gorecipe = new RecipesMenu();
+        gorecipe.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_goRecipeBtnActionPerformed
+
+    private void goSavedRecipeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goSavedRecipeBtnActionPerformed
+        MySavedRecipes savedwindow = new MySavedRecipes();
+        savedwindow.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_goSavedRecipeBtnActionPerformed
+ 
     /**
      * @param args the command line arguments
      */
@@ -298,10 +284,10 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton goProfile;
+    private javax.swing.JButton goRecipeBtn;
+    private javax.swing.JButton goSavedRecipeBtn;
+    private javax.swing.JButton goUploadRecipeBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
