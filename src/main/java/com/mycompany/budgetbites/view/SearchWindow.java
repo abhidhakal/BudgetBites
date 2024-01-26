@@ -35,7 +35,6 @@ public class SearchWindow extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         searchBarIcon = new javax.swing.JLabel();
         searchIcon = new javax.swing.JLabel();
-        searchField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,7 +73,7 @@ public class SearchWindow extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(27, 27, 27)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 410, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(profileIcon)
                 .addGap(22, 22, 22))
         );
@@ -94,26 +93,22 @@ public class SearchWindow extends javax.swing.JFrame {
 
         searchBarIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/line.png"))); // NOI18N
 
-        searchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/search.png"))); // NOI18N
-
-        searchField1.setBackground(new java.awt.Color(255, 211, 147));
-        searchField1.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        searchField1.setBorder(null);
-        searchField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        searchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/search.png"))); // NOI18N
 
         javax.swing.GroupLayout searchMenuNepalLayout = new javax.swing.GroupLayout(searchMenuNepal);
         searchMenuNepal.setLayout(searchMenuNepalLayout);
         searchMenuNepalLayout.setHorizontalGroup(
             searchMenuNepalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(dashboardPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(searchMenuNepalLayout.createSequentialGroup()
                 .addGap(274, 274, 274)
                 .addGroup(searchMenuNepalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(searchIcon)
-                    .addGroup(searchMenuNepalLayout.createSequentialGroup()
-                        .addComponent(searchBarIcon)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(searchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 644, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(searchBarIcon))
+                .addContainerGap(226, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, searchMenuNepalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(dashboardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         searchMenuNepalLayout.setVerticalGroup(
             searchMenuNepalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,9 +118,7 @@ public class SearchWindow extends javax.swing.JFrame {
                 .addGap(226, 226, 226)
                 .addComponent(searchIcon)
                 .addGap(4, 4, 4)
-                .addGroup(searchMenuNepalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(searchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(searchBarIcon))
+                .addComponent(searchBarIcon)
                 .addGap(270, 270, 270))
         );
 
@@ -186,7 +179,6 @@ public class SearchWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel profileIcon;
     private javax.swing.JLabel searchBarIcon;
-    private javax.swing.JTextField searchField1;
     private javax.swing.JLabel searchIcon;
     private javax.swing.JPanel searchMenuNepal;
     // End of variables declaration//GEN-END:variables
