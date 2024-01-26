@@ -122,7 +122,7 @@ public class pancakes extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/pancake.jpeg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/dhakalabhi/Desktop/BudgetBites/src/main/resources/images/pancake.png")); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("AppleGothic", 1, 25)); // NOI18N
         jLabel5.setText("Fluffy Pancakes");

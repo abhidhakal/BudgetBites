@@ -55,11 +55,6 @@ public class Dashboard extends javax.swing.JFrame {
         goSavedRecipeBtn.setText("My Saved Recipes ");
         goSavedRecipeBtn.setBorderPainted(false);
         goSavedRecipeBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        goSavedRecipeBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                goSavedRecipeBtnActionPerformed(evt);
-            }
-        });
 
         goProfile.setBackground(new java.awt.Color(217, 217, 217));
         goProfile.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -226,12 +221,6 @@ public class Dashboard extends javax.swing.JFrame {
     private void searchBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchBarMouseClicked
         searchBar.setText("");
     }//GEN-LAST:event_searchBarMouseClicked
-
-    private void goSavedRecipeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goSavedRecipeBtnActionPerformed
-        MySavedRecipes savedwindow = new MySavedRecipes();
-        savedwindow.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_goSavedRecipeBtnActionPerformed
 
     private void goRecipeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goRecipeBtnActionPerformed
         RecipesMenu rm = new RecipesMenu();
