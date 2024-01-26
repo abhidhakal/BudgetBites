@@ -4,6 +4,7 @@
  */
 package com.mycompany.budgetbites.view;
 
+import recipes.Breakfast.BreakfastBoard;
 import recipes.Breakfast.pancakes;
 
 /**
@@ -198,8 +199,9 @@ public class RecipesMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_searchBtnMouseClicked
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
-        pancakes get = new pancakes();
-        get.setVisible(true);
+        BreakfastBoard bb = new BreakfastBoard();
+        bb.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jPanel8MouseClicked
 
     /**
