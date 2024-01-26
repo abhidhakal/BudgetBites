@@ -40,6 +40,7 @@ public class ForgotPassword extends javax.swing.JFrame {
         newPwCheckbox = new javax.swing.JCheckBox();
         confirmPwCheckbox = new javax.swing.JCheckBox();
         oldPwCheckbox = new javax.swing.JCheckBox();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -146,6 +147,10 @@ public class ForgotPassword extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/exit.png"))); // NOI18N
+        jLabel1.setText("exit");
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+
         javax.swing.GroupLayout forgotPwPanelLayout = new javax.swing.GroupLayout(forgotPwPanel);
         forgotPwPanel.setLayout(forgotPwPanelLayout);
         forgotPwPanelLayout.setHorizontalGroup(
@@ -157,31 +162,34 @@ public class ForgotPassword extends javax.swing.JFrame {
                     .addComponent(emailLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(emailField1, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
-                        .addComponent(oldPwField1))
-                    .addComponent(oldPwCheckbox))
-                .addGap(33, 33, 33)
-                .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(forgotPwPanelLayout.createSequentialGroup()
-                        .addComponent(newPwLabel)
-                        .addGap(32, 32, 32)
-                        .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(newPwCheckbox)
-                            .addComponent(newPwField1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(302, 302, 302))
                     .addGroup(forgotPwPanelLayout.createSequentialGroup()
-                        .addComponent(confirmPwLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(confirmPwCheckbox)
-                            .addComponent(confirmPwField1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(27, Short.MAX_VALUE))
-            .addGroup(forgotPwPanelLayout.createSequentialGroup()
-                .addGap(158, 158, 158)
-                .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(91, 91, 91))
+                            .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(emailField1, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
+                                .addComponent(oldPwField1))
+                            .addComponent(oldPwCheckbox))
+                        .addGap(33, 33, 33)
+                        .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(forgotPwPanelLayout.createSequentialGroup()
+                                .addComponent(newPwLabel)
+                                .addGap(32, 32, 32)
+                                .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(newPwCheckbox)
+                                    .addComponent(newPwField1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel1)
+                                .addGroup(forgotPwPanelLayout.createSequentialGroup()
+                                    .addComponent(confirmPwLabel)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(confirmPwCheckbox)
+                                        .addComponent(confirmPwField1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addContainerGap(102, Short.MAX_VALUE))))
         );
         forgotPwPanelLayout.setVerticalGroup(
             forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -204,10 +212,11 @@ public class ForgotPassword extends javax.swing.JFrame {
                 .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(confirmPwCheckbox)
                     .addComponent(oldPwCheckbox))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addGroup(forgotPwPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1)
+                    .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(51, 51, 51))
         );
 
@@ -319,6 +328,7 @@ public class ForgotPassword extends javax.swing.JFrame {
     private javax.swing.JLabel emailLabel1;
     private javax.swing.JPanel forgotPwPanel;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JCheckBox newPwCheckbox;
     private javax.swing.JPasswordField newPwField1;
     private javax.swing.JLabel newPwLabel;
