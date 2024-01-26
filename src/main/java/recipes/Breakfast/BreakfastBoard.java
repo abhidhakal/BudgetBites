@@ -311,7 +311,8 @@ public class BreakfastBoard extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
-        // TODO add your handling code here:
+        greenSmoothie gs = new greenSmoothie();
+        gs.setVisible(true);
     }//GEN-LAST:event_jPanel5MouseClicked
 
     /**
