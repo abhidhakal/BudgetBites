@@ -205,6 +205,7 @@ public class avocadoToast extends javax.swing.JFrame {
         );
 
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         jTextArea1.setRows(5);
         jTextArea1.setText("Ingredients:\n1 ripe avocado\n1 tbsp. fresh lemon juice\nKosher salt and pepper\n4 slices bread, toasted \n4 hard-boiled eggs, peeled and sliced\n1 bunch small multicolored radishes (thinly sliced)\nChopped fresh chives and sesame seeds (for serving)\n\nMethod: \nTake bread and toast them in a pan or a toaster.\nIn medium bowl, smash avocado with lemon juice and 1/4 teaspoon each salt and pepper.\nSpread on toast and top with the hard-boiled eggs. \nAdd radishes and sprinkle with chives and sesame seeds.\n\nYou can also add a personal ingredient for a unique taste, Enjoy!\n\n");
         jScrollPane1.setViewportView(jTextArea1);
