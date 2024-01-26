@@ -118,7 +118,7 @@ public class RecipesMenu extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Hiragino Maru Gothic ProN", 1, 40)); // NOI18N
         jLabel6.setText("Breakfast");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("/Users/dhakalabhi/Desktop/BudgetBites/src/main/resources/images/pancake.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pancake.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
