@@ -120,7 +120,7 @@ public class momo extends javax.swing.JFrame {
         jTextArea2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText("Momo is the undisputed super star of Nepali cuisinethat is most well known internationally\nIt is a favourite dish among all Nepalese people and even though the process is lengthy, the result is    worth the efforts.");
+        jTextArea2.setText("Momo is the undisputed super star of Nepali cuisinethat is most well known internationally\nIt is a favourite dish among all Nepalese people and even though the process is lengthy, the result is     worth the efforts.");
         jTextArea2.setBorder(null);
         jTextArea2.setCaretColor(new java.awt.Color(255, 255, 255));
         jScrollPane2.setViewportView(jTextArea2);
