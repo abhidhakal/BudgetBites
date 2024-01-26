@@ -109,6 +109,7 @@ public class RecipesMenu extends javax.swing.JFrame {
         line2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/line.png"))); // NOI18N
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel8MouseClicked(evt);
