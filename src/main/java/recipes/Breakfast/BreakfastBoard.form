@@ -217,7 +217,7 @@
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/Users/dhakalabhi/Desktop/BudgetBites/src/main/resources/images/pancake.png"/>
+                  <Image iconType="3" name="/resources/pancake.png"/>
                 </Property>
               </Properties>
             </Component>
