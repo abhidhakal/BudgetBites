@@ -3,6 +3,7 @@ import com.mycompany.budgetbites.database.MySqlConnection;
 import com.mycompany.budgetbites.model.LoginModel;
 import com.mycompany.budgetbites.model.SignUpModel;
 import com.mycompany.budgetbites.model.UserData;
+import com.mycompany.budgetbites.model.LoginResponse;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,29 +12,54 @@ public class AuthDAO extends MySqlConnection {
     public boolean signUp(SignUpModel user) {
         try {
             PreparedStatement sp = null;
-            Connection con = openConnection();
+            Connection conn = openConnection();
             
             String sql = "INSERT INTO users(firstname, lastname, email, password) VALUES(?,?,?,?)";
-            // ? represent placeholder, wildcard, In-case String can be plused so String may bigrina. so we fill up 
-            // question mark later on.
-            sp = con.prepareStatement(sql);
+            sp = conn.prepareStatement(sql);
             sp.setString(1, user.getFirstName());
             sp.setString(2, user.getLastName());
             sp.setString(3, user.getEmail());
             sp.setString(4, user.getPassword());
-            // this is filling ? through PrepareStatement "setter statement. here i represents first Question Mark"
-            
             int result = sp.executeUpdate(); // returns (1) if insert success else (-1)
             if(result == -1) {
                 return false;
             } else {
-            return true;}
+            return true;
+            }
             
         } catch (Exception e) {
             System.out.println(e);
             return false;
         }
     }
+    
+    public LoginResponse goin(LoginModel user){
+        try{
+            PreparedStatement sp = null;
+            Connection conn = openConnection();
+            
+            String sql = "SELECT * from users where email = ? and password = ?";
+            sp = conn.prepareStatement(sql);
+            sp.setString(1, user.getEmail());
+            sp.setString(2, user.getPassword());
+            
+            ResultSet result = sp.executeQuery();
+            if(result == null){
+                return null;
+            }else{
+                result.next();
+                LoginResponse lr = new LoginResponse(
+                result.getString("email"),
+                result.getString("password")
+                );
+                return lr;
+            }
+        }catch(Exception e){
+            System.out.println(e);
+            return null;
+        }
+    }
+    
     public UserData login(LoginModel login){
         try{
             PreparedStatement ps = null;

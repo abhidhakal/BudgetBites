@@ -112,11 +112,6 @@ public class SignUp extends javax.swing.JFrame {
                 createAccBtnMouseClicked(evt);
             }
         });
-        createAccBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createAccBtnActionPerformed(evt);
-            }
-        });
 
         uiLabel.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         uiLabel.setForeground(new java.awt.Color(231, 97, 0));
@@ -160,6 +155,7 @@ public class SignUp extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(termsConditions, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(uiLabel)
@@ -171,24 +167,21 @@ public class SignUp extends javax.swing.JFrame {
                                             .addComponent(slogan2)
                                             .addComponent(slogan1)))
                                     .addComponent(pwLabel)
-                                    .addComponent(createAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 204, Short.MAX_VALUE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(pwField, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(emailField, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(fnLabel)
-                                                .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGap(50, 50, 50)
-                                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(lnLabel)
-                                                .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addComponent(pwReqLabel))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(termsConditions, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(createAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(pwField, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(emailField, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(fnLabel)
+                                                    .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(50, 50, 50)
+                                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(lnLabel)
+                                                    .addComponent(lastName, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(pwReqLabel)))
+                                .addGap(0, 164, Short.MAX_VALUE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(image)
                         .addGap(42, 42, 42))))
@@ -256,10 +249,6 @@ public class SignUp extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void createAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createAccBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_createAccBtnActionPerformed
-
     private void createAccBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_createAccBtnMouseClicked
         // TODO add your handling code here:
         AuthDAO daoAuth = new AuthDAO();
@@ -267,7 +256,7 @@ public class SignUp extends javax.swing.JFrame {
         String lastname = lastName.getText();
         String email = emailField.getText();
         String password = pwField.getText();
-        SignUpModel signupmodel = new SignUpModel(email, firstname, lastname, password);
+        SignUpModel signupmodel = new SignUpModel(email, password, firstname, lastname);
 
         boolean check = daoAuth.signUp(signupmodel);
         if (check == true){

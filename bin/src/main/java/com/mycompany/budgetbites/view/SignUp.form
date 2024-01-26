@@ -72,8 +72,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="termsConditions" alignment="1" max="32767" attributes="0"/>
-                                  <Group type="102" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="uiLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="emailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -87,27 +86,31 @@
                                           </Group>
                                           <Component id="pwLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="createAccBtn" min="-2" pref="179" max="-2" attributes="0"/>
-                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                              <Component id="pwField" alignment="1" min="-2" pref="450" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="emailField" alignment="0" max="32767" attributes="0"/>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="fnLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="firstName" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="lnLabel" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="lastName" min="-2" pref="200" max="-2" attributes="0"/>
-                                                      </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="204" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="pwField" alignment="1" min="-2" pref="450" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="emailField" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="fnLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="firstName" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="lnLabel" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lastName" min="-2" pref="200" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
-                                              <Component id="pwReqLabel" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <Component id="pwReqLabel" alignment="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="0" pref="164" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
+                                  <Component id="termsConditions" alignment="1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="image" min="-2" max="-2" attributes="0"/>
@@ -307,6 +310,7 @@
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="createAccBtnMouseClicked"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createAccBtnActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="uiLabel">

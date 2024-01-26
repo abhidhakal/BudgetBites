@@ -1,3 +1,5 @@
+package com.mycompany.budgetbites.model;
+
 public class LoginResponse {
     private String email;
     private String password;
