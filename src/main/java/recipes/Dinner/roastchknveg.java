@@ -108,7 +108,7 @@ public class roastchknveg extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/mcandcheese.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/chickenveg.png"))); // NOI18N
         jLabel1.setToolTipText("");
 
         jLabel5.setFont(new java.awt.Font("Avenir Next", 1, 25)); // NOI18N
