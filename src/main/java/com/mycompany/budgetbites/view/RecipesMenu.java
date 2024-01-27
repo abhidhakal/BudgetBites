@@ -39,12 +39,18 @@ public class RecipesMenu extends javax.swing.JFrame {
         searchBtn = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         line2 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
+        lunchGo = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
+        brekfastGo = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        dinnerGo = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        dinnerGo1 = new javax.swing.JPanel();
+        snacksGo = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -112,47 +118,47 @@ public class RecipesMenu extends javax.swing.JFrame {
 
         line2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/line.png"))); // NOI18N
 
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        lunchGo.setBackground(new java.awt.Color(255, 255, 255));
+        lunchGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lunchGo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel8MouseClicked(evt);
+                lunchGoMouseClicked(evt);
             }
         });
 
         jLabel6.setFont(new java.awt.Font("Avenir Next", 1, 40)); // NOI18N
         jLabel6.setText("Lunch");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/momo.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/salad.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout lunchGoLayout = new javax.swing.GroupLayout(lunchGo);
+        lunchGo.setLayout(lunchGoLayout);
+        lunchGoLayout.setHorizontalGroup(
+            lunchGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lunchGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel5)
                 .addGap(47, 47, 47)
                 .addComponent(jLabel6)
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        lunchGoLayout.setVerticalGroup(
+            lunchGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lunchGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lunchGoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addGap(72, 72, 72))
         );
 
-        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
+        brekfastGo.setBackground(new java.awt.Color(255, 255, 255));
+        brekfastGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        brekfastGo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel9MouseClicked(evt);
+                brekfastGoMouseClicked(evt);
             }
         });
 
@@ -161,26 +167,98 @@ public class RecipesMenu extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pancake.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout brekfastGoLayout = new javax.swing.GroupLayout(brekfastGo);
+        brekfastGo.setLayout(brekfastGoLayout);
+        brekfastGoLayout.setHorizontalGroup(
+            brekfastGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(brekfastGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel8)
                 .addGap(47, 47, 47)
                 .addComponent(jLabel7)
                 .addContainerGap(58, Short.MAX_VALUE))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        brekfastGoLayout.setVerticalGroup(
+            brekfastGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(brekfastGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel8)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, brekfastGoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
+                .addGap(72, 72, 72))
+        );
+
+        dinnerGo.setBackground(new java.awt.Color(255, 255, 255));
+        dinnerGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        dinnerGo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dinnerGoMouseClicked(evt);
+            }
+        });
+
+        jLabel9.setFont(new java.awt.Font("Avenir Next", 1, 40)); // NOI18N
+        jLabel9.setText("Dinner");
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/salad.png"))); // NOI18N
+
+        javax.swing.GroupLayout dinnerGoLayout = new javax.swing.GroupLayout(dinnerGo);
+        dinnerGo.setLayout(dinnerGoLayout);
+        dinnerGoLayout.setHorizontalGroup(
+            dinnerGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dinnerGoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel10)
+                .addGap(47, 47, 47)
+                .addComponent(jLabel9)
+                .addContainerGap(127, Short.MAX_VALUE))
+        );
+        dinnerGoLayout.setVerticalGroup(
+            dinnerGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dinnerGoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel10)
+                .addContainerGap(18, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dinnerGoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel9)
+                .addGap(72, 72, 72))
+        );
+
+        dinnerGo1.setBackground(new java.awt.Color(255, 255, 255));
+        dinnerGo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        dinnerGo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dinnerGo1MouseClicked(evt);
+            }
+        });
+
+        snacksGo.setFont(new java.awt.Font("Avenir Next", 1, 40)); // NOI18N
+        snacksGo.setText("Snacks");
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/salad.png"))); // NOI18N
+
+        javax.swing.GroupLayout dinnerGo1Layout = new javax.swing.GroupLayout(dinnerGo1);
+        dinnerGo1.setLayout(dinnerGo1Layout);
+        dinnerGo1Layout.setHorizontalGroup(
+            dinnerGo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dinnerGo1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel12)
+                .addGap(47, 47, 47)
+                .addComponent(snacksGo)
+                .addContainerGap(115, Short.MAX_VALUE))
+        );
+        dinnerGo1Layout.setVerticalGroup(
+            dinnerGo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dinnerGo1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel12)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dinnerGo1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(snacksGo)
                 .addGap(72, 72, 72))
         );
 
@@ -205,12 +283,18 @@ public class RecipesMenu extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(477, 477, 477))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuPanelLayout.createSequentialGroup()
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(96, 96, 96))))
+                        .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(dinnerGo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lunchGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(56, 56, 56))))
+            .addGroup(MenuPanelLayout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addComponent(dinnerGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(MenuPanelLayout.createSequentialGroup()
                     .addGap(75, 75, 75)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(brekfastGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(678, Short.MAX_VALUE)))
         );
         MenuPanelLayout.setVerticalGroup(
@@ -223,12 +307,16 @@ public class RecipesMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(line2)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(316, Short.MAX_VALUE))
+                .addComponent(lunchGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(dinnerGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(dinnerGo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(62, Short.MAX_VALUE))
             .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(MenuPanelLayout.createSequentialGroup()
                     .addGap(195, 195, 195)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(brekfastGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(318, Short.MAX_VALUE)))
         );
 
@@ -252,17 +340,25 @@ public class RecipesMenu extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_searchBtnMouseClicked
 
-    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
+    private void lunchGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lunchGoMouseClicked
         LunchBoard lb = new LunchBoard();
         lb.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jPanel8MouseClicked
+    }//GEN-LAST:event_lunchGoMouseClicked
 
-    private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
+    private void brekfastGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_brekfastGoMouseClicked
         BreakfastBoard bb = new BreakfastBoard();
         bb.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jPanel9MouseClicked
+    }//GEN-LAST:event_brekfastGoMouseClicked
+
+    private void dinnerGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dinnerGoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dinnerGoMouseClicked
+
+    private void dinnerGo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dinnerGo1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dinnerGo1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -302,8 +398,13 @@ public class RecipesMenu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel MenuPanel;
     private javax.swing.JLabel appNameLabel;
+    private javax.swing.JPanel brekfastGo;
     private javax.swing.JPanel dashboardSmall;
+    private javax.swing.JPanel dinnerGo;
+    private javax.swing.JPanel dinnerGo1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -311,9 +412,10 @@ public class RecipesMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel line2;
+    private javax.swing.JPanel lunchGo;
     private javax.swing.JLabel searchBtn;
+    private javax.swing.JLabel snacksGo;
     // End of variables declaration//GEN-END:variables
 }
