@@ -47,18 +47,9 @@ public class LunchBoard extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        dalbhatGo2 = new javax.swing.JPanel();
+        tacoGo = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        dalbhatGo3 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        dalbhatGo5 = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -102,7 +93,7 @@ public class LunchBoard extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(35, 35, 35)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 351, Short.MAX_VALUE)
                 .addComponent(searchBtn)
                 .addGap(14, 14, 14))
         );
@@ -147,21 +138,20 @@ public class LunchBoard extends javax.swing.JFrame {
             .addGroup(momoGOLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(jLabel5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(28, 28, 28))
         );
         momoGOLayout.setVerticalGroup(
             momoGOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(momoGOLayout.createSequentialGroup()
-                .addGroup(momoGOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(momoGOLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(momoGOLayout.createSequentialGroup()
-                        .addGap(81, 81, 81)
-                        .addComponent(jLabel5)))
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, momoGOLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addGap(78, 78, 78))
         );
 
         dalbhatGo.setBackground(new java.awt.Color(255, 255, 255));
@@ -183,10 +173,10 @@ public class LunchBoard extends javax.swing.JFrame {
             dalbhatGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dalbhatGoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel6)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         dalbhatGoLayout.setVerticalGroup(
             dalbhatGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,7 +186,7 @@ public class LunchBoard extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(dalbhatGoLayout.createSequentialGroup()
-                        .addGap(81, 81, 81)
+                        .addGap(76, 76, 76)
                         .addComponent(jLabel7)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -224,7 +214,7 @@ public class LunchBoard extends javax.swing.JFrame {
             .addGroup(saladGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(saladGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saladGoLayout.createSequentialGroup()
                         .addComponent(jLabel9)
@@ -241,150 +231,48 @@ public class LunchBoard extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saladGoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(saladGoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        dalbhatGo2.setBackground(new java.awt.Color(255, 255, 255));
-        dalbhatGo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        dalbhatGo2.addMouseListener(new java.awt.event.MouseAdapter() {
+        tacoGo.setBackground(new java.awt.Color(255, 255, 255));
+        tacoGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        tacoGo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                dalbhatGo2MouseClicked(evt);
+                tacoGoMouseClicked(evt);
             }
         });
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/dalbhat.png"))); // NOI18N
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/taco.png"))); // NOI18N
 
         jLabel14.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel14.setText("Chicken Ceaser");
+        jLabel14.setText("Taco Wraps");
 
-        jLabel15.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel15.setText("Salad");
-
-        javax.swing.GroupLayout dalbhatGo2Layout = new javax.swing.GroupLayout(dalbhatGo2);
-        dalbhatGo2.setLayout(dalbhatGo2Layout);
-        dalbhatGo2Layout.setHorizontalGroup(
-            dalbhatGo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dalbhatGo2Layout.createSequentialGroup()
+        javax.swing.GroupLayout tacoGoLayout = new javax.swing.GroupLayout(tacoGo);
+        tacoGo.setLayout(tacoGoLayout);
+        tacoGoLayout.setHorizontalGroup(
+            tacoGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tacoGoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel13)
-                .addGroup(dalbhatGo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(dalbhatGo2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel14)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dalbhatGo2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel15)
-                        .addGap(51, 51, 51))))
-        );
-        dalbhatGo2Layout.setVerticalGroup(
-            dalbhatGo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dalbhatGo2Layout.createSequentialGroup()
-                .addGap(59, 59, 59)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
                 .addComponent(jLabel14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel15)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dalbhatGo2Layout.createSequentialGroup()
+        );
+        tacoGoLayout.setVerticalGroup(
+            tacoGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(tacoGoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        dalbhatGo3.setBackground(new java.awt.Color(255, 255, 255));
-        dalbhatGo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        dalbhatGo3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                dalbhatGo3MouseClicked(evt);
-            }
-        });
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/salad.png"))); // NOI18N
-
-        jLabel17.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel17.setText("Chicken Caeser");
-
-        jLabel18.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel18.setText("Salad");
-
-        javax.swing.GroupLayout dalbhatGo3Layout = new javax.swing.GroupLayout(dalbhatGo3);
-        dalbhatGo3.setLayout(dalbhatGo3Layout);
-        dalbhatGo3Layout.setHorizontalGroup(
-            dalbhatGo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dalbhatGo3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(dalbhatGo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dalbhatGo3Layout.createSequentialGroup()
-                        .addComponent(jLabel17)
-                        .addGap(29, 29, 29))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dalbhatGo3Layout.createSequentialGroup()
-                        .addComponent(jLabel18)
-                        .addGap(72, 72, 72))))
-        );
-        dalbhatGo3Layout.setVerticalGroup(
-            dalbhatGo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dalbhatGo3Layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dalbhatGo3Layout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
-                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        dalbhatGo5.setBackground(new java.awt.Color(255, 255, 255));
-        dalbhatGo5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        dalbhatGo5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                dalbhatGo5MouseClicked(evt);
-            }
-        });
-
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/dalbhat.png"))); // NOI18N
-
-        jLabel23.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel23.setText("Chicken Ceaser");
-
-        jLabel24.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel24.setText("Salad");
-
-        javax.swing.GroupLayout dalbhatGo5Layout = new javax.swing.GroupLayout(dalbhatGo5);
-        dalbhatGo5.setLayout(dalbhatGo5Layout);
-        dalbhatGo5Layout.setHorizontalGroup(
-            dalbhatGo5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dalbhatGo5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel22)
-                .addGroup(dalbhatGo5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(dalbhatGo5Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel23)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dalbhatGo5Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel24)
-                        .addGap(51, 51, 51))))
-        );
-        dalbhatGo5Layout.setVerticalGroup(
-            dalbhatGo5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dalbhatGo5Layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(jLabel23)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel24)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dalbhatGo5Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGroup(tacoGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tacoGoLayout.createSequentialGroup()
+                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tacoGoLayout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addGap(78, 78, 78))))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -400,23 +288,20 @@ public class LunchBoard extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel11)
                         .addGap(489, 489, 489))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(dalbhatGo, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(dalbhatGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(momoGO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(dalbhatGo2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(saladGo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(36, 36, 36)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(dalbhatGo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(dalbhatGo5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
-                .addGap(33, 33, 33))
+                            .addComponent(saladGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(tacoGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -428,14 +313,12 @@ public class LunchBoard extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(dalbhatGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(saladGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(dalbhatGo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(saladGo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(dalbhatGo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(dalbhatGo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(dalbhatGo5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tacoGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(momoGO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(99, 99, 99))
         );
@@ -444,7 +327,7 @@ public class LunchBoard extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1226, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -454,38 +337,31 @@ public class LunchBoard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void searchBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchBtnMouseClicked
-        SearchWindow go = new SearchWindow();
-        go.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_searchBtnMouseClicked
-
-    private void momoGOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_momoGOMouseClicked
-        momo mo = new momo();
-        mo.setVisible(true);
-    }//GEN-LAST:event_momoGOMouseClicked
-
-    private void dalbhatGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dalbhatGoMouseClicked
-        bhaat db = new bhaat();
-        db.setVisible(true);
-    }//GEN-LAST:event_dalbhatGoMouseClicked
+    private void tacoGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tacoGoMouseClicked
+        tacos tc = new tacos();
+        tc.setVisible(true);
+    }//GEN-LAST:event_tacoGoMouseClicked
 
     private void saladGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saladGoMouseClicked
         salad ss = new salad();
         ss.setVisible(true);
     }//GEN-LAST:event_saladGoMouseClicked
 
-    private void dalbhatGo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dalbhatGo2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dalbhatGo2MouseClicked
+    private void dalbhatGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dalbhatGoMouseClicked
+        bhaat db = new bhaat();
+        db.setVisible(true);
+    }//GEN-LAST:event_dalbhatGoMouseClicked
 
-    private void dalbhatGo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dalbhatGo3MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dalbhatGo3MouseClicked
+    private void momoGOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_momoGOMouseClicked
+        momo mo = new momo();
+        mo.setVisible(true);
+    }//GEN-LAST:event_momoGOMouseClicked
 
-    private void dalbhatGo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dalbhatGo5MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dalbhatGo5MouseClicked
+    private void searchBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchBtnMouseClicked
+        SearchWindow go = new SearchWindow();
+        go.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_searchBtnMouseClicked
 
     /**
      * @param args the command line arguments
@@ -525,23 +401,13 @@ public class LunchBoard extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel appNameLabel;
     private javax.swing.JPanel dalbhatGo;
-    private javax.swing.JPanel dalbhatGo2;
-    private javax.swing.JPanel dalbhatGo3;
-    private javax.swing.JPanel dalbhatGo5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -554,5 +420,6 @@ public class LunchBoard extends javax.swing.JFrame {
     private javax.swing.JPanel momoGO;
     private javax.swing.JPanel saladGo;
     private javax.swing.JLabel searchBtn;
+    private javax.swing.JPanel tacoGo;
     // End of variables declaration//GEN-END:variables
 }
