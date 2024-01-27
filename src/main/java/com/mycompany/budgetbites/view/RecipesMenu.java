@@ -5,7 +5,7 @@
 package com.mycompany.budgetbites.view;
 
 import recipes.Breakfast.BreakfastBoard;
-import recipes.Breakfast.pancakes;
+import recipes.Dinner.DinnerBoard;
 import recipes.Lunch.LunchBoard;
 
 /**
@@ -201,7 +201,7 @@ public class RecipesMenu extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Avenir Next", 1, 40)); // NOI18N
         jLabel9.setText("Dinner");
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/salad.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/btrchicken.png"))); // NOI18N
 
         javax.swing.GroupLayout dinnerGoLayout = new javax.swing.GroupLayout(dinnerGo);
         dinnerGo.setLayout(dinnerGoLayout);
@@ -212,7 +212,7 @@ public class RecipesMenu extends javax.swing.JFrame {
                 .addComponent(jLabel10)
                 .addGap(47, 47, 47)
                 .addComponent(jLabel9)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
         dinnerGoLayout.setVerticalGroup(
             dinnerGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -353,7 +353,9 @@ public class RecipesMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_brekfastGoMouseClicked
 
     private void dinnerGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dinnerGoMouseClicked
-        // TODO add your handling code here:
+        DinnerBoard dnb = new DinnerBoard();
+        dnb.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_dinnerGoMouseClicked
 
     private void dinnerGo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dinnerGo1MouseClicked
