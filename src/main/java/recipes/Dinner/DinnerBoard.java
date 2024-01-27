@@ -47,7 +47,7 @@ public class DinnerBoard extends javax.swing.JFrame {
         btrcknGo = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        saladGo1 = new javax.swing.JPanel();
+        beanbrgrGo = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -245,43 +245,45 @@ public class DinnerBoard extends javax.swing.JFrame {
                 .addGap(76, 76, 76))
         );
 
-        saladGo1.setBackground(new java.awt.Color(255, 255, 255));
-        saladGo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        beanbrgrGo.setBackground(new java.awt.Color(255, 255, 255));
+        beanbrgrGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        beanbrgrGo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                beanbrgrGoMouseClicked(evt);
+            }
+        });
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/salad.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/burger.png"))); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel16.setText("Chicken Caeser");
+        jLabel16.setText("Black Bean");
 
         jLabel17.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel17.setText("Salad");
+        jLabel17.setText("Burgers");
 
-        javax.swing.GroupLayout saladGo1Layout = new javax.swing.GroupLayout(saladGo1);
-        saladGo1.setLayout(saladGo1Layout);
-        saladGo1Layout.setHorizontalGroup(
-            saladGo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saladGo1Layout.createSequentialGroup()
+        javax.swing.GroupLayout beanbrgrGoLayout = new javax.swing.GroupLayout(beanbrgrGo);
+        beanbrgrGo.setLayout(beanbrgrGoLayout);
+        beanbrgrGoLayout.setHorizontalGroup(
+            beanbrgrGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(beanbrgrGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(saladGo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saladGo1Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addGap(29, 29, 29))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saladGo1Layout.createSequentialGroup()
-                        .addComponent(jLabel17)
-                        .addGap(72, 72, 72))))
+                .addGroup(beanbrgrGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel17))
+                .addGap(29, 29, 29))
         );
-        saladGo1Layout.setVerticalGroup(
-            saladGo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saladGo1Layout.createSequentialGroup()
-                .addGroup(saladGo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(saladGo1Layout.createSequentialGroup()
+        beanbrgrGoLayout.setVerticalGroup(
+            beanbrgrGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(beanbrgrGoLayout.createSequentialGroup()
+                .addGroup(beanbrgrGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(beanbrgrGoLayout.createSequentialGroup()
                         .addGap(59, 59, 59)
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel17))
-                    .addGroup(saladGo1Layout.createSequentialGroup()
+                    .addGroup(beanbrgrGoLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(9, Short.MAX_VALUE))
@@ -349,9 +351,9 @@ public class DinnerBoard extends javax.swing.JFrame {
                             .addComponent(btrcknGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(pestoGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(48, 48, 48)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(mcncheeseGo, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(saladGo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(beanbrgrGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(mcncheeseGo, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(cknvegGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -375,7 +377,7 @@ public class DinnerBoard extends javax.swing.JFrame {
                             .addComponent(cknvegGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(mcncheeseGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
-                        .addComponent(saladGo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(beanbrgrGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(3, 3, 3))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btrcknGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -424,6 +426,11 @@ public class DinnerBoard extends javax.swing.JFrame {
         ppasta.setVisible(true);
     }//GEN-LAST:event_pestoGoMouseClicked
 
+    private void beanbrgrGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_beanbrgrGoMouseClicked
+        beanBurger bbg = new beanBurger();
+        bbg.setVisible(true);
+    }//GEN-LAST:event_beanbrgrGoMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -462,6 +469,7 @@ public class DinnerBoard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel appNameLabel;
+    private javax.swing.JPanel beanbrgrGo;
     private javax.swing.JPanel btrcknGo;
     private javax.swing.JPanel cknvegGo;
     private javax.swing.JLabel jLabel10;
@@ -486,7 +494,6 @@ public class DinnerBoard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel mcncheeseGo;
     private javax.swing.JPanel pestoGo;
-    private javax.swing.JPanel saladGo1;
     private javax.swing.JLabel searchBtn;
     // End of variables declaration//GEN-END:variables
 }
