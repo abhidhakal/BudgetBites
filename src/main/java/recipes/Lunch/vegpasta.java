@@ -199,7 +199,9 @@ public class vegpasta extends javax.swing.JFrame {
                 .addGap(56, 56, 56))
         );
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
         jTextArea1.setText("Ingredients:\n200 grams linguine/ spaghetti/ any pasta\n100 grams mushrooms\n1 cup grape tomatoes\n1 tbsp cooking oil\n100 grams fresh spinach\n1 tbsp butter\n1/4 tsp garlic powder\n2 tbsp nutritional yeast\n1/4 tsp salt\n1/4 tsp freshly cracked black pepper\n\nMethod:\nBring a large pot of water to a boil for the pasta. Once boiling, add the pasta and continue to boil until the pasta is tender (about 7 minutes).\nReserve a 1/2 cup of the pasta water, then drain the pasta in a colander.\nWhile waiting for the water to boil, slice the mushrooms and cut the tomatoes in half.\nHeat the cooking oil in a large skillet over medium heat. \nAdd the mushrooms and a pinch of salt to the skillet and sauté until they have released all of their moisture and water is no longer pooling on the bottom of the skillet (about 5-7 minutes).\nAdd the tomatoes and sauté for about two minutes more, or just until they're heated through (they'll continue to cook more after other ingredients are added). Add the spinach and sauté just until wilted.\nFinally, add the cooked and drained pasta to the skillet along with the butter.\nToss until everything is coated in melted butter.\nTurn the heat off.\nSeason with garlic powder, nutritional yeast, salt, and pepper, then toss to coat.\nGive the pasta a taste and adjust the seasonings to your liking.\nIf the pasta gets too dry as you're tossing with the seasoning, just add a splash of the reserved pasta water.\n\nServe immediately and enjoy.\n\nNote: Swap with a vegan butter to make this recipe vegan.");
         jScrollPane1.setViewportView(jTextArea1);
