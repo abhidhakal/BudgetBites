@@ -37,9 +37,10 @@ public class DinnerBoard extends javax.swing.JFrame {
         searchBtn = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        dalbhatGo = new javax.swing.JPanel();
+        pestoGo = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         mcncheeseGo = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -125,35 +126,51 @@ public class DinnerBoard extends javax.swing.JFrame {
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/line.png"))); // NOI18N
 
-        dalbhatGo.setBackground(new java.awt.Color(255, 255, 255));
-        dalbhatGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pestoGo.setBackground(new java.awt.Color(255, 255, 255));
+        pestoGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pestoGo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pestoGoMouseClicked(evt);
+            }
+        });
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/btrchicken.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pestopasta.png"))); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-        jLabel7.setText("Butter Chicken");
+        jLabel7.setText("One Pot");
 
-        javax.swing.GroupLayout dalbhatGoLayout = new javax.swing.GroupLayout(dalbhatGo);
-        dalbhatGo.setLayout(dalbhatGoLayout);
-        dalbhatGoLayout.setHorizontalGroup(
-            dalbhatGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dalbhatGoLayout.createSequentialGroup()
+        jLabel20.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
+        jLabel20.setText("Pesto Pasta");
+
+        javax.swing.GroupLayout pestoGoLayout = new javax.swing.GroupLayout(pestoGo);
+        pestoGo.setLayout(pestoGoLayout);
+        pestoGoLayout.setHorizontalGroup(
+            pestoGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pestoGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel6)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel7)
+                .addGroup(pestoGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pestoGoLayout.createSequentialGroup()
+                        .addGap(65, 65, 65)
+                        .addComponent(jLabel7))
+                    .addGroup(pestoGoLayout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(jLabel20)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        dalbhatGoLayout.setVerticalGroup(
-            dalbhatGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dalbhatGoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+        pestoGoLayout.setVerticalGroup(
+            pestoGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pestoGoLayout.createSequentialGroup()
+                .addGroup(pestoGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pestoGoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pestoGoLayout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel20)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dalbhatGoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addGap(76, 76, 76))
         );
 
         mcncheeseGo.setBackground(new java.awt.Color(255, 255, 255));
@@ -328,9 +345,9 @@ public class DinnerBoard extends javax.swing.JFrame {
                         .addComponent(jLabel12))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btrcknGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(dalbhatGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btrcknGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pestoGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(48, 48, 48)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(mcncheeseGo, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -363,7 +380,7 @@ public class DinnerBoard extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btrcknGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(dalbhatGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(pestoGo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
@@ -401,6 +418,11 @@ public class DinnerBoard extends javax.swing.JFrame {
         roastchknveg rcv = new roastchknveg();
         rcv.setVisible(true);
     }//GEN-LAST:event_cknvegGoMouseClicked
+
+    private void pestoGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pestoGoMouseClicked
+        pestoPasta ppasta = new pestoPasta();
+        ppasta.setVisible(true);
+    }//GEN-LAST:event_pestoGoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -442,7 +464,6 @@ public class DinnerBoard extends javax.swing.JFrame {
     private javax.swing.JLabel appNameLabel;
     private javax.swing.JPanel btrcknGo;
     private javax.swing.JPanel cknvegGo;
-    private javax.swing.JPanel dalbhatGo;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -454,6 +475,7 @@ public class DinnerBoard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
@@ -463,6 +485,7 @@ public class DinnerBoard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel mcncheeseGo;
+    private javax.swing.JPanel pestoGo;
     private javax.swing.JPanel saladGo1;
     private javax.swing.JLabel searchBtn;
     // End of variables declaration//GEN-END:variables
