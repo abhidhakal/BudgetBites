@@ -4,6 +4,7 @@
  */
 package recipes.Lunch;
 
+import com.mycompany.budgetbites.view.RecipesMenu;
 import com.mycompany.budgetbites.view.SearchWindow;
 
 /**
@@ -119,6 +120,12 @@ public class LunchBoard extends javax.swing.JFrame {
         appNameLabel.setFont(new java.awt.Font("Arial", 1, 26)); // NOI18N
         appNameLabel.setForeground(new java.awt.Color(255, 107, 0));
         appNameLabel.setText("BudgetBites");
+        appNameLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        appNameLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                appNameLabelMouseClicked(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 107, 0));
@@ -538,6 +545,11 @@ public class LunchBoard extends javax.swing.JFrame {
         alfredo ca = new alfredo();
         ca.setVisible(true);
     }//GEN-LAST:event_alfredoGoMouseClicked
+
+    private void appNameLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_appNameLabelMouseClicked
+        RecipesMenu rm = new RecipesMenu();
+        rm.setVisible(true);
+    }//GEN-LAST:event_appNameLabelMouseClicked
 
     /**
      * @param args the command line arguments
