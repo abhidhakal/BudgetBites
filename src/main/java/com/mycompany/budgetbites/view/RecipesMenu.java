@@ -5,6 +5,7 @@
 package com.mycompany.budgetbites.view;
 
 import recipes.Breakfast.BreakfastBoard;
+import recipes.DessertnSnacks.DessertSnacksBoard;
 import recipes.Dinner.DinnerBoard;
 import recipes.Lunch.LunchBoard;
 
@@ -48,21 +49,29 @@ public class RecipesMenu extends javax.swing.JFrame {
         dinnerGo = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        dinnerGo1 = new javax.swing.JPanel();
+        dessrtSnacksGo = new javax.swing.JPanel();
         snacksGo = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        snacksGo1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         MenuPanel.setBackground(new java.awt.Color(255, 211, 147));
-        MenuPanel.setMaximumSize(new java.awt.Dimension(1226, 700));
-        MenuPanel.setMinimumSize(new java.awt.Dimension(1226, 700));
+        MenuPanel.setMaximumSize(new java.awt.Dimension(1250, 725));
+        MenuPanel.setMinimumSize(new java.awt.Dimension(1250, 725));
 
         dashboardSmall.setBackground(new java.awt.Color(46, 34, 34));
 
         appNameLabel.setFont(new java.awt.Font("Arial", 1, 26)); // NOI18N
         appNameLabel.setForeground(new java.awt.Color(255, 107, 0));
         appNameLabel.setText("BudgetBites");
+        appNameLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        appNameLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                appNameLabelMouseClicked(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 107, 0));
@@ -219,47 +228,55 @@ public class RecipesMenu extends javax.swing.JFrame {
             .addGroup(dinnerGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel10)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dinnerGoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel9)
                 .addGap(72, 72, 72))
         );
 
-        dinnerGo1.setBackground(new java.awt.Color(255, 255, 255));
-        dinnerGo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        dinnerGo1.addMouseListener(new java.awt.event.MouseAdapter() {
+        dessrtSnacksGo.setBackground(new java.awt.Color(255, 255, 255));
+        dessrtSnacksGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        dessrtSnacksGo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                dinnerGo1MouseClicked(evt);
+                dessrtSnacksGoMouseClicked(evt);
             }
         });
 
         snacksGo.setFont(new java.awt.Font("Avenir Next", 1, 40)); // NOI18N
-        snacksGo.setText("Snacks");
+        snacksGo.setText("Desserts &");
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/salad.png"))); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/hotchocolate.png"))); // NOI18N
 
-        javax.swing.GroupLayout dinnerGo1Layout = new javax.swing.GroupLayout(dinnerGo1);
-        dinnerGo1.setLayout(dinnerGo1Layout);
-        dinnerGo1Layout.setHorizontalGroup(
-            dinnerGo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dinnerGo1Layout.createSequentialGroup()
+        snacksGo1.setFont(new java.awt.Font("Avenir Next", 1, 40)); // NOI18N
+        snacksGo1.setText("Snacks");
+
+        javax.swing.GroupLayout dessrtSnacksGoLayout = new javax.swing.GroupLayout(dessrtSnacksGo);
+        dessrtSnacksGo.setLayout(dessrtSnacksGoLayout);
+        dessrtSnacksGoLayout.setHorizontalGroup(
+            dessrtSnacksGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dessrtSnacksGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel12)
-                .addGap(47, 47, 47)
-                .addComponent(snacksGo)
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addGap(55, 55, 55)
+                .addGroup(dessrtSnacksGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(snacksGo)
+                    .addComponent(snacksGo1))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
-        dinnerGo1Layout.setVerticalGroup(
-            dinnerGo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dinnerGo1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel12)
+        dessrtSnacksGoLayout.setVerticalGroup(
+            dessrtSnacksGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dessrtSnacksGoLayout.createSequentialGroup()
+                .addGroup(dessrtSnacksGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(dessrtSnacksGoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel12))
+                    .addGroup(dessrtSnacksGoLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(snacksGo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(snacksGo1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dinnerGo1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(snacksGo)
-                .addGap(72, 72, 72))
         );
 
         javax.swing.GroupLayout MenuPanelLayout = new javax.swing.GroupLayout(MenuPanel);
@@ -284,8 +301,8 @@ public class RecipesMenu extends javax.swing.JFrame {
                         .addGap(477, 477, 477))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuPanelLayout.createSequentialGroup()
                         .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(dinnerGo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lunchGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lunchGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(dessrtSnacksGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(56, 56, 56))))
             .addGroup(MenuPanelLayout.createSequentialGroup()
                 .addGap(72, 72, 72)
@@ -311,8 +328,8 @@ public class RecipesMenu extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(dinnerGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(dinnerGo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(62, Short.MAX_VALUE))
+                    .addComponent(dessrtSnacksGo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
             .addGroup(MenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(MenuPanelLayout.createSequentialGroup()
                     .addGap(195, 195, 195)
@@ -358,9 +375,17 @@ public class RecipesMenu extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_dinnerGoMouseClicked
 
-    private void dinnerGo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dinnerGo1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dinnerGo1MouseClicked
+    private void dessrtSnacksGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dessrtSnacksGoMouseClicked
+        DessertSnacksBoard dsb = new DessertSnacksBoard();
+        dsb.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_dessrtSnacksGoMouseClicked
+
+    private void appNameLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_appNameLabelMouseClicked
+        Dashboard db = new Dashboard();
+        db.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_appNameLabelMouseClicked
 
     /**
      * @param args the command line arguments
@@ -402,8 +427,8 @@ public class RecipesMenu extends javax.swing.JFrame {
     private javax.swing.JLabel appNameLabel;
     private javax.swing.JPanel brekfastGo;
     private javax.swing.JPanel dashboardSmall;
+    private javax.swing.JPanel dessrtSnacksGo;
     private javax.swing.JPanel dinnerGo;
-    private javax.swing.JPanel dinnerGo1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
@@ -419,5 +444,6 @@ public class RecipesMenu extends javax.swing.JFrame {
     private javax.swing.JPanel lunchGo;
     private javax.swing.JLabel searchBtn;
     private javax.swing.JLabel snacksGo;
+    private javax.swing.JLabel snacksGo1;
     // End of variables declaration//GEN-END:variables
 }
