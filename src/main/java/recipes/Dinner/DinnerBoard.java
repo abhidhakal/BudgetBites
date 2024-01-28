@@ -129,7 +129,7 @@ public class DinnerBoard extends javax.swing.JFrame {
         );
 
         jLabel11.setFont(new java.awt.Font("Avenir Next", 1, 35)); // NOI18N
-        jLabel11.setText("Lunch Items");
+        jLabel11.setText("Dinner Items");
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/line.png"))); // NOI18N
 
