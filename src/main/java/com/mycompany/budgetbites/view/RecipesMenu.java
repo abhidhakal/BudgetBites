@@ -37,7 +37,6 @@ public class RecipesMenu extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        searchBtn = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         line2 = new javax.swing.JLabel();
         lunchGo = new javax.swing.JPanel();
@@ -86,13 +85,6 @@ public class RecipesMenu extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Uploaded Recipes");
 
-        searchBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/search.png"))); // NOI18N
-        searchBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                searchBtnMouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout dashboardSmallLayout = new javax.swing.GroupLayout(dashboardSmall);
         dashboardSmall.setLayout(dashboardSmallLayout);
         dashboardSmallLayout.setHorizontalGroup(
@@ -106,9 +98,7 @@ public class RecipesMenu extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(48, 48, 48)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(searchBtn)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         dashboardSmallLayout.setVerticalGroup(
             dashboardSmallLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,7 +110,6 @@ public class RecipesMenu extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
                 .addContainerGap(17, Short.MAX_VALUE))
-            .addComponent(searchBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -355,12 +344,6 @@ public class RecipesMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void searchBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchBtnMouseClicked
-        SearchWindow go = new SearchWindow();
-        go.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_searchBtnMouseClicked
-
     private void lunchGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lunchGoMouseClicked
         LunchBoard lb = new LunchBoard();
         lb.setVisible(true);
@@ -447,7 +430,6 @@ public class RecipesMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel line2;
     private javax.swing.JPanel lunchGo;
-    private javax.swing.JLabel searchBtn;
     private javax.swing.JLabel snacksGo;
     private javax.swing.JLabel snacksGo1;
     // End of variables declaration//GEN-END:variables

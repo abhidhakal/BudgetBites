@@ -4,12 +4,6 @@
  */
 package recipes.Breakfast;
 
-import com.mycompany.budgetbites.view.SearchWindow;
-
-/**
- *
- * @author mohandhakal
- */
 public class oats extends javax.swing.JFrame {
 
     /**

@@ -5,7 +5,6 @@
 package recipes.DessertnSnacks;
 
 import com.mycompany.budgetbites.view.RecipesMenu;
-import com.mycompany.budgetbites.view.SearchWindow;
 
 /**
  *
@@ -35,7 +34,6 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        searchBtn = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         hotChocolateGo = new javax.swing.JPanel();
@@ -89,13 +87,6 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Uploaded Recipes");
 
-        searchBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/search.png"))); // NOI18N
-        searchBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                searchBtnMouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -109,9 +100,7 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(35, 35, 35)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 350, Short.MAX_VALUE)
-                .addComponent(searchBtn)
-                .addGap(14, 14, 14))
+                .addContainerGap(414, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,11 +111,7 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(searchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         jLabel11.setFont(new java.awt.Font("Avenir Next", 1, 35)); // NOI18N
@@ -420,12 +405,6 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
         rm.setVisible(true);
     }//GEN-LAST:event_appNameLabelMouseClicked
 
-    private void searchBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchBtnMouseClicked
-        SearchWindow go = new SearchWindow();
-        go.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_searchBtnMouseClicked
-
     private void hotChocolateGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hotChocolateGoMouseClicked
         hotChocolate hc = new hotChocolate();
         hc.setVisible(true);
@@ -514,6 +493,5 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel mugcakeGo;
     private javax.swing.JPanel paniPuriGo;
-    private javax.swing.JLabel searchBtn;
     // End of variables declaration//GEN-END:variables
 }

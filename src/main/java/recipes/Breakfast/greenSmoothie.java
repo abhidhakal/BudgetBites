@@ -4,8 +4,6 @@
  */
 package recipes.Breakfast;
 
-import com.mycompany.budgetbites.view.SearchWindow;
-
 /**
  *
  * @author mohandhakal

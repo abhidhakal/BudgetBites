@@ -5,7 +5,6 @@
 package recipes.Breakfast;
 
 import com.mycompany.budgetbites.view.RecipesMenu;
-import com.mycompany.budgetbites.view.SearchWindow;
 
 /**
  *
@@ -35,7 +34,6 @@ public class BreakfastBoard extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        searchBtn = new javax.swing.JLabel();
         pancakeGo = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -92,13 +90,6 @@ public class BreakfastBoard extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Uploaded Recipes");
 
-        searchBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/search.png"))); // NOI18N
-        searchBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                searchBtnMouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -112,9 +103,7 @@ public class BreakfastBoard extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(35, 35, 35)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 381, Short.MAX_VALUE)
-                .addComponent(searchBtn)
-                .addGap(14, 14, 14))
+                .addContainerGap(445, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -125,11 +114,7 @@ public class BreakfastBoard extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(searchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pancakeGo.setBackground(new java.awt.Color(255, 255, 255));
@@ -451,12 +436,6 @@ public class BreakfastBoard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void searchBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchBtnMouseClicked
-        SearchWindow go = new SearchWindow();
-        go.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_searchBtnMouseClicked
-
     private void pancakeGoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pancakeGoMouseClicked
         pancakes pc = new pancakes();
         pc.setVisible(true);
@@ -557,7 +536,6 @@ public class BreakfastBoard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel pancakeGo;
-    private javax.swing.JLabel searchBtn;
     private javax.swing.JPanel smoothieGo;
     // End of variables declaration//GEN-END:variables
 }
