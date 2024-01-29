@@ -117,7 +117,7 @@ public class SignUp extends javax.swing.JFrame {
         uiLabel.setForeground(new java.awt.Color(231, 97, 0));
         uiLabel.setText("Join the Community");
 
-        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/imagebook.png"))); // NOI18N
+        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/nobglogo.png"))); // NOI18N
 
         seePwSignup.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         seePwSignup.setText("See Password");
