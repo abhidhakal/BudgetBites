@@ -17,15 +17,13 @@ public class Dashboard extends javax.swing.JFrame {
         logOutBtn = new javax.swing.JButton();
         goSavedRecipeBtn = new javax.swing.JButton();
         goProfile = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        logoPic = new javax.swing.JLabel();
+        logo = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         searchBar = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -38,7 +36,6 @@ public class Dashboard extends javax.swing.JFrame {
         goRecipeBtn.setBackground(new java.awt.Color(217, 217, 217));
         goRecipeBtn.setFont(new java.awt.Font("Avenir Next", 1, 15)); // NOI18N
         goRecipeBtn.setText("Recipes & Menus");
-        goRecipeBtn.setBorderPainted(false);
         goRecipeBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         goRecipeBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,7 +46,6 @@ public class Dashboard extends javax.swing.JFrame {
         logOutBtn.setBackground(new java.awt.Color(217, 217, 217));
         logOutBtn.setFont(new java.awt.Font("Avenir Next", 1, 15)); // NOI18N
         logOutBtn.setText("Log Out");
-        logOutBtn.setBorderPainted(false);
         logOutBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         logOutBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,56 +56,49 @@ public class Dashboard extends javax.swing.JFrame {
         goSavedRecipeBtn.setBackground(new java.awt.Color(217, 217, 217));
         goSavedRecipeBtn.setFont(new java.awt.Font("Avenir Next", 1, 15)); // NOI18N
         goSavedRecipeBtn.setText("My Saved Recipes ");
-        goSavedRecipeBtn.setBorderPainted(false);
         goSavedRecipeBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         goProfile.setBackground(new java.awt.Color(217, 217, 217));
         goProfile.setFont(new java.awt.Font("Avenir Next", 1, 15)); // NOI18N
         goProfile.setText("Profile");
-        goProfile.setBorderPainted(false);
         goProfile.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        goProfile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                goProfileActionPerformed(evt);
+            }
+        });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/logosmall.png"))); // NOI18N
-
-        logoPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logosmall.png"))); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logosmall.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(goRecipeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(logOutBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(goSavedRecipeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(goProfile, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel2)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(goRecipeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(logOutBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(goSavedRecipeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                    .addComponent(goProfile, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(logoPic)
+                .addGap(17, 17, 17)
+                .addComponent(logo)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(logoPic)
-                .addGap(76, 76, 76)
+                .addComponent(logo)
+                .addGap(39, 39, 39)
                 .addComponent(goRecipeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(45, 45, 45)
                 .addComponent(goSavedRecipeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(40, 40, 40)
                 .addComponent(goProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 178, Short.MAX_VALUE)
                 .addComponent(logOutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35))
         );
@@ -162,13 +151,6 @@ public class Dashboard extends javax.swing.JFrame {
                 searchBarMouseClicked(evt);
             }
         });
-        searchBar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBarActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/line.png"))); // NOI18N
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/search.png"))); // NOI18N
 
@@ -182,17 +164,14 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(289, 289, 289)
-                            .addComponent(jLabel3)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel8))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(292, 292, 292)
-                            .addComponent(jLabel7)
-                            .addGap(27, 27, 27)
-                            .addComponent(searchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(276, 276, 276)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel8)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(searchBar))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(8, 8, 8)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -206,14 +185,12 @@ public class Dashboard extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(246, 246, 246)
+                        .addGap(247, 247, 247)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel7)
                             .addComponent(searchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -234,10 +211,6 @@ public class Dashboard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void searchBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBarActionPerformed
-
     private void searchBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchBarMouseClicked
         searchBar.setText("");
     }//GEN-LAST:event_searchBarMouseClicked
@@ -253,6 +226,11 @@ public class Dashboard extends javax.swing.JFrame {
         getIn.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logOutBtnActionPerformed
+
+    private void goProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goProfileActionPerformed
+        Profile usergo = new Profile();
+        usergo.setVisible(true);
+    }//GEN-LAST:event_goProfileActionPerformed
  
     /**
      * @param args the command line arguments
@@ -294,8 +272,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton goRecipeBtn;
     private javax.swing.JButton goSavedRecipeBtn;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -305,7 +281,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JButton logOutBtn;
-    private javax.swing.JLabel logoPic;
+    private javax.swing.JLabel logo;
     private javax.swing.JTextField searchBar;
     // End of variables declaration//GEN-END:variables
 }
