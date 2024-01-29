@@ -125,7 +125,7 @@ public class RecipesMenu extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setText("QUICK & EASY RECIPES");
 
-        line2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/line.png"))); // NOI18N
+        line2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logosmall.png"))); // NOI18N
 
         lunchGo.setBackground(new java.awt.Color(255, 255, 255));
         lunchGo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
