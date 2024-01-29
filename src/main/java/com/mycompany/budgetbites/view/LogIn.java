@@ -35,7 +35,7 @@ public class LogIn extends javax.swing.JFrame {
         LoginPanel.setBackground(new java.awt.Color(199, 201, 120));
         LoginPanel.setSize(new java.awt.Dimension(800, 480));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/budgetbites/nobglogo.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/nobglogo.png"))); // NOI18N
 
         slogan1.setFont(new java.awt.Font("Arial", 1, 35)); // NOI18N
         slogan1.setForeground(new java.awt.Color(90, 0, 0));
@@ -213,7 +213,7 @@ public class LogIn extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Invalid Credentials");
         }
         else{
-            JOptionPane.showMessageDialog(this, "Login Successful");
+            // JOptionPane.showMessageDialog(this, "Login Successful");
             Dashboard ds = new Dashboard();
             ds.setVisible(true);
             this.dispose();
