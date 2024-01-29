@@ -49,15 +49,12 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         gulabJamunGo = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         paniPuriGo = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         chipsGo = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
 
@@ -218,7 +215,7 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
                 .addGroup(mugcakeGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel18)
                     .addComponent(jLabel17))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         mugcakeGoLayout.setVerticalGroup(
             mugcakeGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -244,8 +241,6 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gulabjamun.png"))); // NOI18N
 
-        jLabel20.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-
         jLabel21.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
         jLabel21.setText("Gulab Jamun");
 
@@ -256,13 +251,8 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
             .addGroup(gulabJamunGoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel19)
-                .addGroup(gulabJamunGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(gulabJamunGoLayout.createSequentialGroup()
-                        .addGap(128, 128, 128)
-                        .addComponent(jLabel20))
-                    .addGroup(gulabJamunGoLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel21)))
+                .addGap(34, 34, 34)
+                .addComponent(jLabel21)
                 .addContainerGap(44, Short.MAX_VALUE))
         );
         gulabJamunGoLayout.setVerticalGroup(
@@ -274,9 +264,7 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gulabJamunGoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel21)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel20)
-                .addGap(64, 64, 64))
+                .addGap(82, 82, 82))
         );
 
         paniPuriGo.setBackground(new java.awt.Color(255, 255, 255));
@@ -287,42 +275,33 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
             }
         });
 
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pani-puri.png"))); // NOI18N
-
-        jLabel24.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
-
         jLabel25.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
         jLabel25.setText("Pani Puri");
+
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/panipurii.png"))); // NOI18N
 
         javax.swing.GroupLayout paniPuriGoLayout = new javax.swing.GroupLayout(paniPuriGo);
         paniPuriGo.setLayout(paniPuriGoLayout);
         paniPuriGoLayout.setHorizontalGroup(
             paniPuriGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(paniPuriGoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel23)
-                .addGroup(paniPuriGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(paniPuriGoLayout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(jLabel24)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, paniPuriGoLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel25)
-                        .addGap(74, 74, 74))))
+                .addGap(12, 12, 12)
+                .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel25)
+                .addGap(74, 74, 74))
         );
         paniPuriGoLayout.setVerticalGroup(
             paniPuriGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(paniPuriGoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, paniPuriGoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel25)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel24)
-                .addGap(64, 64, 64))
+                .addGap(82, 82, 82))
+            .addGroup(paniPuriGoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         chipsGo.setBackground(new java.awt.Color(255, 255, 255));
@@ -335,8 +314,6 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
 
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/chips.png"))); // NOI18N
-
-        jLabel27.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
 
         jLabel28.setFont(new java.awt.Font("Avenir Next", 1, 18)); // NOI18N
         jLabel28.setText("Homemade");
@@ -354,13 +331,8 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
                     .addComponent(jLabel29)
                     .addGroup(chipsGoLayout.createSequentialGroup()
                         .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(chipsGoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(chipsGoLayout.createSequentialGroup()
-                                .addGap(143, 143, 143)
-                                .addComponent(jLabel27))
-                            .addGroup(chipsGoLayout.createSequentialGroup()
-                                .addGap(52, 52, 52)
-                                .addComponent(jLabel28)))))
+                        .addGap(52, 52, 52)
+                        .addComponent(jLabel28)))
                 .addContainerGap(31, Short.MAX_VALUE))
         );
         chipsGoLayout.setVerticalGroup(
@@ -371,8 +343,6 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, chipsGoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel27)
-                .addGap(18, 18, 18)
                 .addComponent(jLabel28)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel29)
@@ -384,7 +354,7 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(8, Short.MAX_VALUE)
+                .addContainerGap(20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -531,17 +501,14 @@ public class DessertSnacksBoard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
