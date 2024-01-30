@@ -59,6 +59,11 @@ public class Dashboard extends javax.swing.JFrame {
         goSavedRecipeBtn.setFont(new java.awt.Font("Avenir Next", 1, 15)); // NOI18N
         goSavedRecipeBtn.setText("My Saved Recipes ");
         goSavedRecipeBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        goSavedRecipeBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                goSavedRecipeBtnActionPerformed(evt);
+            }
+        });
 
         goProfile.setBackground(new java.awt.Color(217, 217, 217));
         goProfile.setFont(new java.awt.Font("Avenir Next", 1, 15)); // NOI18N
@@ -250,6 +255,12 @@ public class Dashboard extends javax.swing.JFrame {
         rm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_goRecipeBtnActionPerformed
+
+    private void goSavedRecipeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goSavedRecipeBtnActionPerformed
+        MySavedRecipes mssr = new MySavedRecipes();
+        mssr.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_goSavedRecipeBtnActionPerformed
  
     /**
      * @param args the command line arguments
