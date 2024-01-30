@@ -140,6 +140,12 @@ public class ForgotPassword extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/exit.png"))); // NOI18N
         jLabel1.setText("EXIT");
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
 
         tokenField.setBackground(new java.awt.Color(227, 235, 219));
 
@@ -260,33 +266,41 @@ public class ForgotPassword extends javax.swing.JFrame {
     }//GEN-LAST:event_clearBtnMouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        MySqlConnection mySqlConnection = new MySqlConnection();
-        Connection con = mySqlConnection.openConnection();
-        if (con != null) {
-            String enteredEmail = emailField1.getText();
-            int recordId = 1;
-            String emailFromRecord = mySqlConnection.getEmailFromRecord(con, recordId);
-            if (emailFromRecord != null && enteredEmail.equals(emailFromRecord)) {
-                
-                // Emails match, proceed with password change
-                
+       MySqlConnection mySqlConnection = new MySqlConnection();
+    Connection con = mySqlConnection.openConnection();
+    if (con != null) {
+        String enteredEmail = emailField1.getText();
+        int recordId = 1;
+        String emailFromRecord = mySqlConnection.getEmailFromRecord(con, recordId);
+        String enteredToken = tokenField.getText(); // Get the entered token
+        if (emailFromRecord != null && enteredEmail.equals(emailFromRecord)) {
+            // Check if emails match and the entered token is correct
+            String requiredToken = "4428"; // The required token
+            if (enteredToken.equals(requiredToken)) {
+                // Proceed with password change
                 String newPassword = newPwField1.getText(); // Assuming you get the new password from the field
                 int rowsUpdated = mySqlConnection.updatePasswordByEmail(con, enteredEmail, newPassword);
                 if (rowsUpdated > 0) {
                     JOptionPane.showMessageDialog(this, "Password updated successfully.");
                 } else {
                     JOptionPane.showMessageDialog(this, "Failed to update password.");
-}
-                // Add your password change logic here
+                }
             } else {
-                // Emails don't match
-                JOptionPane.showMessageDialog(this, "Emails do not match or email field empty.");
+                JOptionPane.showMessageDialog(this, "Entered token is incorrect.");
             }
-            mySqlConnection.closeConnection(con);
         } else {
-            JOptionPane.showMessageDialog(this, "Database connection Error.");
+            // Emails don't match
+            JOptionPane.showMessageDialog(this, "Emails do not match or email field empty.");
         }
+        mySqlConnection.closeConnection(con);
+    } else {
+        JOptionPane.showMessageDialog(this, "Database connection Error.");
+    }
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        this.dispose();
+    }//GEN-LAST:event_jLabel1MouseClicked
     
     /**
      * @param args the command line arguments
