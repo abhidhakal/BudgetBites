@@ -259,7 +259,6 @@ public class Dashboard extends javax.swing.JFrame {
     private void goSavedRecipeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goSavedRecipeBtnActionPerformed
         MySavedRecipes mssr = new MySavedRecipes();
         mssr.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_goSavedRecipeBtnActionPerformed
  
     /**
