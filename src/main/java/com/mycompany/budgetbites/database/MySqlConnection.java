@@ -95,5 +95,19 @@ public class MySqlConnection implements DbConnection{
             return -1; // or handle the error accordingly
         }
     }
+        
+    public int addRecipeToFavorites(Connection con, String recipeName) {
+            try {
+                String query = "INSERT INTO favorite_recipes (recipe_name) VALUES (?)";
+                PreparedStatement pstmt = con.prepareStatement(query);
+                pstmt.setString(1, recipeName);
+                int rowsInserted = pstmt.executeUpdate();
+                pstmt.close();
+                return rowsInserted;
+            } catch (SQLException e) {
+                System.out.println("Error adding recipe to favorites: " + e.getMessage());
+                return -1; // or handle the error accordingly
+            }
+    }
     
 }
