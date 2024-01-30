@@ -63,4 +63,37 @@ public class MySqlConnection implements DbConnection{
         }
     }
     
+    public String getEmailFromRecord(Connection con, int recordId) {
+        String email = null;
+        try {
+            String query = "SELECT email FROM users WHERE id = ?";
+            PreparedStatement pstmt = con.prepareStatement(query);
+            pstmt.setInt(1, recordId);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                email = rs.getString("email");
+            }
+            rs.close();
+            pstmt.close();
+        } catch (SQLException e) {
+            System.out.println("Error fetching email from record: " + e.getMessage());
+        }
+        return email;
+    }
+        
+        public int updatePasswordByEmail(Connection con, String email, String newPassword) {
+        try {
+            String query = "UPDATE users SET password = ? WHERE email = ?";
+            PreparedStatement pstmt = con.prepareStatement(query);
+            pstmt.setString(1, newPassword);
+            pstmt.setString(2, email);
+            int rowsUpdated = pstmt.executeUpdate();
+            pstmt.close();
+            return rowsUpdated;
+        } catch (SQLException e) {
+            System.out.println("Error updating password: " + e.getMessage());
+            return -1; // or handle the error accordingly
+        }
+    }
+    
 }
