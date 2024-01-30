@@ -4,6 +4,8 @@
  */
 package recipes.Breakfast;
 
+import com.mycompany.budgetbites.view.MySavedRecipes;
+
 /**
  *
  * @author mohandhakal
@@ -42,6 +44,7 @@ public class avocadoToast extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        favCheckBox = new javax.swing.JCheckBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
@@ -89,7 +92,7 @@ public class avocadoToast extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(46, 46, 46)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 392, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(searchBtn)
                 .addContainerGap())
         );
@@ -174,6 +177,14 @@ public class avocadoToast extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Avenir Next", 1, 22)); // NOI18N
         jLabel8.setText("Servings: 4");
 
+        favCheckBox.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        favCheckBox.setText("Add to Favourites");
+        favCheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                favCheckBoxActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -181,14 +192,13 @@ public class avocadoToast extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
-                        .addComponent(jLabel8)
-                        .addGap(81, 81, 81))))
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(favCheckBox))
+                .addGap(81, 81, 81))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,7 +208,9 @@ public class avocadoToast extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(favCheckBox))
                 .addGap(56, 56, 56))
         );
 
@@ -214,7 +226,7 @@ public class avocadoToast extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1224, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1241, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(58, 58, 58)
@@ -258,6 +270,11 @@ public class avocadoToast extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_searchBtnMouseClicked
 
+    private void favCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_favCheckBoxActionPerformed
+        MySavedRecipes msr = new MySavedRecipes();
+       jLabel1.setText("Avocado Toast");
+    }//GEN-LAST:event_favCheckBoxActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -295,6 +312,7 @@ public class avocadoToast extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel appNameLabel;
+    private javax.swing.JCheckBox favCheckBox;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
