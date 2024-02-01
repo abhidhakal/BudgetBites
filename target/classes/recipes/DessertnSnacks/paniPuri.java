@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package recipes.DessertnSnacks;
+import com.mycompany.budgetbites.database.MySqlConnection;
+import java.sql.Connection;
 
 /**
  *
@@ -42,6 +44,7 @@ public class paniPuri extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        favCheckBox = new javax.swing.JCheckBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
@@ -164,6 +167,14 @@ public class paniPuri extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Avenir Next", 1, 22)); // NOI18N
         jLabel9.setText("Servings: 4");
 
+        favCheckBox.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        favCheckBox.setText("Add to Favourites");
+        favCheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                favCheckBoxActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -173,7 +184,9 @@ public class paniPuri extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel8)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(favCheckBox)
+                        .addContainerGap())
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
@@ -188,7 +201,9 @@ public class paniPuri extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(jLabel9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
-                .addComponent(jLabel8)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(favCheckBox))
                 .addGap(35, 35, 35))
         );
 
@@ -251,6 +266,26 @@ public class paniPuri extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_searchBtnMouseClicked
 
+    private void favCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_favCheckBoxActionPerformed
+
+        String recipeName = jLabel5.getText(); // Update this with the actual recipe name
+
+        // Open a connection to the database
+        MySqlConnection db = new MySqlConnection();
+        Connection con = db.openConnection();
+
+        // Add the recipe to favorites
+        int rowsInserted = db.addRecipeToFavorites(con, recipeName);
+        if (rowsInserted > 0) {
+            System.out.println("Recipe added to favorites: " + recipeName);
+        } else {
+            System.out.println("Failed to add recipe to favorites.");
+        }
+
+        // Close the database connection
+        db.closeConnection(con);
+    }//GEN-LAST:event_favCheckBoxActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -289,6 +324,7 @@ public class paniPuri extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel appNameLabel;
     private javax.swing.JPanel dashboardSmall;
+    private javax.swing.JCheckBox favCheckBox;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

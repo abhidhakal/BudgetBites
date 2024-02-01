@@ -277,9 +277,8 @@ public class LogIn extends javax.swing.JFrame {
     private javax.swing.JLabel slogan1;
     private javax.swing.JLabel slogan2;
     // End of variables declaration//GEN-END:variables
-
-    String getEmail() {
-        String mailuser = emailField.getText();
-        return mailuser;
+        String getEmail() {
+            String mailuser = emailField.getText();
+            return mailuser;
     }
 }
